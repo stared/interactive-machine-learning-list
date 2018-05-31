@@ -16,6 +16,34 @@
   tags: [convnet]
   uses: [demo, library]
 
+- name: "Support Vector Machine in JavaScript"
+  url: https://cs.stanford.edu/~karpathy/svmjs/demo/
+  repo: https://github.com/karpathy/svmjs
+  license: MIT
+  writeup: ""
+  authors: [Andrej Karpathy]
+  tags: [svm]
+  uses: [demo, library]
+
+- name: "tSNEJS demo"
+  url: https://cs.stanford.edu/people/karpathy/tsnejs/
+  repo: https://github.com/karpathy/tsnejs
+  license: MIT
+  writeup: http://karpathy.github.io/2014/07/02/visualizing-top-tweeps-with-t-sne-in-Javascript/
+  authors: [Andrej Karpathy]
+  tags: [tsne]
+  uses: [demo, library]
+
+- name: "Random Forest demo in JavaScript"
+  desc: "Random Forest implementation for JavaScript. Supports arbitrary weak learners."
+  url: https://cs.stanford.edu/~karpathy/svmjs/demo/demoforest.html
+  repo: https://github.com/karpathy/forestjs
+  license: MIT
+  writeup: ""
+  authors: [Andrej Karpathy]
+  tags: [tsne]
+  uses: [demo, library]
+
 - name: "Keras.js"
   url: https://transcranial.github.io/keras-js/#/
   repo: https://github.com/transcranial/keras-js
