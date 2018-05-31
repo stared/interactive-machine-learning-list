@@ -1,0 +1,99 @@
+- name: "Deep Recurrent Nets character generation demo"
+  url: https://cs.stanford.edu/people/karpathy/recurrentjs/
+  repo: https://github.com/karpathy/recurrentjs
+  license: MIT
+  writeup: http://karpathy.github.io/2015/05/21/rnn-effectiveness/
+  authors: [Andrej Karpathy]
+  tags: [rnn, lstm, nlp]
+  uses: [demo, library]
+
+- name: "ConvNetJS"
+  url: https://cs.stanford.edu/people/karpathy/recurrentjs/
+  repo: https://github.com/karpathy/convnetjs
+  license: MIT
+  writeup: ""
+  authors: [Andrej Karpathy]
+  tags: [convnet]
+  uses: [demo, library]
+
+- name: "Keras.js"
+  url: https://transcranial.github.io/keras-js/#/
+  repo: https://github.com/transcranial/keras-js
+  license: MIT
+  writeup: ""
+  authors: [Leon Chen]
+  tags: [convnet, rnn]
+  uses: [demo, library]
+
+- name: "Interactive visualization of word analogies in GloVe"
+  url: https://cs.stanford.edu/people/karpathy/recurrentjs/
+  repo: https://github.com/lamyiowce/word2viz
+  license: ""
+  writeup: http://p.migdal.pl/2017/01/06/king-man-woman-queen-why.html
+  authors: [Julia Bazińska, Piotr Migdał]
+  tags: [nlp, word2vec]
+  uses: [demo]
+
+- name: "A Neural Network Playground"
+  url: http://playground.tensorflow.org/
+  repo: https://github.com/tensorflow/playground
+  license: Apache
+  writeup: ""
+  authors: [Daniel Smilkov, Shan Carter]
+  tags: [mlp]
+  uses: [demo]
+
+- name: "A visual introduction to machine learning"
+  url: http://www.r2d3.us/visual-intro-to-machine-learning-part-1/
+  repo: ""
+  license: ""
+  writeup: ""
+  authors: [Stephanie Yee, Tony Chu]
+  tags: [decision-tree]
+  uses: [demo, tutorial]
+
+- name: "D3 Graph Theory"
+  url: https://mrpandey.github.io/d3graphTheory/index.html
+  repo: https://github.com/mrpandey/d3graphTheory
+  license: GPL
+  writeup: ""
+  authors: [Stephanie Yee, Tony Chu]
+  tags: [graph]
+  uses: [demo, tutorial]
+
+- name: "immersive linear algebra"
+  url: http://immersivemath.com/ila/index.html
+  repo: https://github.com/mrpandey/d3graphTheory
+  license: ""
+  writeup: ""
+  authors: [J. Ström, K. Åström, and T. Akenine-Mölle]
+  tags: [math, linear-algebra]
+  uses: [book]
+
+- name: "immersive linear algebra"
+  url: http://immersivemath.com/ila/index.html
+  repo: https://github.com/mrpandey/d3graphTheory
+  license: ""
+  writeup: ""
+  authors: [J. Ström, K. Åström, and T. Akenine-Mölle]
+  tags: [math, linear-algebra]
+  uses: [book]
+
+- name: "Neural Networks and Deep Learning"
+  url: http://neuralnetworksanddeeplearning.com/
+  repo: ""
+  license: CC BY NC
+  writeup: ""
+  authors: [Michael Nielsen]
+  tags: [deep-learning]
+  uses: [book]
+
+- name: "Seeing Theory"
+  desc: "A visual introduction to probability and statistics"
+  url: http://students.brown.edu/seeing-theory/
+  repo: ""
+  license: ""
+  writeup: ""
+  authors: [Daniel Kunin, Jingru Guo, Tyler Dae Devlin, Daniel Xiang]
+  tags: [statistics]
+  uses: [tutorial]
