@@ -125,3 +125,13 @@
   authors: [Daniel Kunin, Jingru Guo, Tyler Dae Devlin, Daniel Xiang]
   tags: [statistics]
   uses: [tutorial]
+
+- name: "tSNE for the Web"
+  desc: "TensorFlow.js Powered tSNE Implementation"
+  url: https://nicola17.github.io/tfjs-tsne-demo/
+  repo: https://github.com/tensorflow/tfjs-tsne
+  license: Apache
+  writeup: https://ai.googleblog.com/2018/06/realtime-tsne-visualizations-with.html
+  authors: [Nicola Pezzotti, Alexander Mordvintsev, Thomas Hollt, Boudewijn P. F. Lelieveldt, Elmar Eisemann, Anna Vilanova]
+  tags: [tsne]
+  uses: [demo, tensorflow.js, npm]
