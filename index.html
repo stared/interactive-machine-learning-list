@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Machine Learning List</title>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.12.0/js-yaml.min.js"></script>
+</head>
+<body>
+  <a href="https://github.com/stared/
+interactive-machine-learning-list"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+  <div id="app">
+    <ul>
+      <li v-for="website in websites">
+        <a :href="website.url">{{ website.name }}</a><br>
+        by {{ etAl(website.authors) }}<br>
+        <span v-if="website.repo">
+          <a :href="website.repo">source code</a> ({{ website.license }}),
+        </span>
+        <a v-if="website.writeup" :href="website.writeup">blog post</a><br>
+        <span v-for="tag in website.tags">[{{ tag }}]</span>
+        <span v-for="use in website.uses">[{{ use }}]</span>
+        <br><br>
+      </li>
+    </ul>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
