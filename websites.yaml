@@ -56,7 +56,7 @@
 - name: "Interactive visualization of word analogies in GloVe"
   url: https://cs.stanford.edu/people/karpathy/recurrentjs/
   repo: https://github.com/lamyiowce/word2viz
-  license: ""
+  license: MIT
   writeup: http://p.migdal.pl/2017/01/06/king-man-woman-queen-why.html
   authors: [Julia Bazińska, Piotr Migdał]
   tags: [nlp, word2vec]
@@ -88,15 +88,6 @@
   authors: [Stephanie Yee, Tony Chu]
   tags: [graph]
   uses: [demo, tutorial]
-
-- name: "immersive linear algebra"
-  url: http://immersivemath.com/ila/index.html
-  repo: https://github.com/mrpandey/d3graphTheory
-  license: ""
-  writeup: ""
-  authors: [J. Ström, K. Åström, and T. Akenine-Mölle]
-  tags: [math, linear-algebra]
-  uses: [book]
 
 - name: "immersive linear algebra"
   url: http://immersivemath.com/ila/index.html
