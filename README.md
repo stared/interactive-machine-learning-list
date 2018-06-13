@@ -9,7 +9,6 @@ Feel invited to Pull Request other interactive visualizations! :)
 
 Strong preference for open-source solutions.
 
-
 ## Other lists
 
 * [Explorable Explanations](http://explorabl.es/)
@@ -20,8 +19,8 @@ Strong preference for open-source solutions.
 
 Inspirations for collecting and displaying content:
 
-* [Science-based games - a collaborative list](https://github.com/stared/science-based-games-list) - a list I started ()
+* [Science-based games - a collaborative list](https://github.com/stared/science-based-games-list) - a list I started (maybe I will turn it int something interactive as well)
 * [Kaggle Past Solutions](http://ndres.me/kaggle-past-solutions/) - a searchable compilation of Kaggle past solutions
   * source: [EliotAndres/kaggle-past-solutions](https://github.com/EliotAndres/kaggle-past-solutions)
 * [D3 Discovery](https://d3-discovery.net/) - finding D3 plugins with ease
-  * source: [github.com/wbkd/awesome-d3](https://github.com/wbkd/awesome-d3/)
+  * source: [https://github.com/wbkd/d3-discovery](https://github.com/wbkd/d3-discovery)
