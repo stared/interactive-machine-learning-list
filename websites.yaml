@@ -110,8 +110,8 @@
 - name: "Seeing Theory"
   desc: "A visual introduction to probability and statistics"
   url: http://students.brown.edu/seeing-theory/
-  repo: ""
-  license: ""
+  repo: https://github.com/seeingtheory/Seeing-Theory
+  license: Apache
   writeup: ""
   authors: [Daniel Kunin, Jingru Guo, Tyler Dae Devlin, Daniel Xiang]
   tags: [statistics]
@@ -126,3 +126,23 @@
   authors: [Nicola Pezzotti, Alexander Mordvintsev, Thomas Hollt, Boudewijn P. F. Lelieveldt, Elmar Eisemann, Anna Vilanova]
   tags: [tsne]
   uses: [demo, tensorflow.js, npm]
+
+- name: "GRAIL Text Recognizer"
+  desc: "An active essay revisiting Gabriel Groner's GRAIL handwriting recognizer from the 1960s"
+  url: https://jackschaedler.github.io/handwriting-recognition/
+  repo: https://github.com/jackschaedler/handwriting-recognition
+  license: MIT
+  writeup: ""
+  authors: [Jack Schaedler]
+  tags: [handwriting]
+  uses: [demo, tutorial]
+
+- name: "pix2pix: Image-to-Image Demo"
+  desc: "Tensorflow port of Image-to-Image Translation with Conditional Adversarial Nets"
+  url: https://affinelayer.com/pixsrv/
+  repo: https://github.com/affinelayer/pix2pix-tensorflow
+  license: MIT
+  writeup: ""
+  authors: [Christopher Hesse]
+  tags: [gan, deep-learning]
+  uses: [demo, tutorial]
