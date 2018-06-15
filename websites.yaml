@@ -15,6 +15,7 @@
   authors: [Andrej Karpathy]
   tags: [convnet]
   uses: [demo, library]
+  # maybe adding "see also" with concrete examples?
 
 - name: "Support Vector Machine in JavaScript"
   url: https://cs.stanford.edu/~karpathy/svmjs/demo/
@@ -146,3 +147,84 @@
   authors: [Christopher Hesse]
   tags: [gan, deep-learning]
   uses: [demo, tutorial]
+
+- name: "compromise"
+  desc: "modest natural-language processing in javascript"
+  url: http://compromise.cool/
+  repo: https://github.com/spencermountain/compromise
+  license: MIT
+  writeup: ""
+  authors: [Spencer Kelly]
+  tags: [nlp]
+  uses: [demo, library]
+
+- name: "NeuroJS"
+  desc: "A javascript deep learning and reinforcement learning library"
+  url: https://janhuenermann.com/projects/learning-to-drive
+  repo: https://github.com/janhuenermann/neurojs
+  license: MIT
+  writeup: ""
+  authors: [Jan Hünermann]
+  tags: [deep-learning, reinforcement-learning]
+  uses: [demo, library]
+
+- name: "DeepForge"
+  desc: "A modern development environment for deep learning"
+  url: http://deepforge.org/
+  repo: https://github.com/deepforge-dev/deepforge
+  license: Apache
+  writeup: ""
+  authors: [Brian Broll]
+  tags: [deep-learning]
+  uses: [demo, library]
+
+- name: "synaptic"
+  desc: "The javascript architecture-free neural network library for node.js and the browser"
+  url: http://caza.la/synaptic/
+  repo: https://github.com/cazala/synaptic
+  license: MIT
+  writeup: ""
+  authors: [Brian Broll]
+  tags: [deep-learning]
+  uses: [demo, library]
+
+- name: "Machine learning library for Node.js"
+  desc: "Logistic regression, SVM linear and radial, kNN"
+  url: http://joonku.com/project/machine_learning
+  repo: https://github.com/junku901/machine_learning
+  license: MIT
+  writeup: ""
+  authors: [Joon-Ku Kang]
+  tags: [machine-learning]
+  uses: [demo, library, npm]
+
+- name: "Neural Slime Volleyball"
+  desc: "HTML5-JS Slime Volleyball clone created using ConvNetJS."
+  url: http://otoro.net/slimevolley/
+  repo: https://github.com/hardmaru/neuralslimevolley
+  license: GPL
+  writeup: ""
+  authors: [hardmaru]
+  tags: [deep-learning]
+  uses: [demo]
+
+- name: "Neural Slime Volleyball"
+  desc: "HTML5-JS Slime Volleyball clone created using ConvNetJS."
+  url: http://otoro.net/slimevolley/
+  repo: https://github.com/hardmaru/neuralslimevolley
+  license: GPL
+  writeup: http://blog.otoro.net/2017/05/19/teaching-machines-to-draw/
+  authors: [hardmaru]
+  tags: [deep-learning]
+  uses: [demo]
+
+- name: "Can a neural network learn to recognize doodling?"
+  desc: "HTML5-JS Slime Volleyball clone created using ConvNetJS."
+  url: https://quickdraw.withgoogle.com/
+  repo: ""
+  license: ""
+  writeup: https://ai.googleblog.com/2017/04/teaching-machines-to-draw.html
+  authors: [hardmaru]
+  tags: [deep-learning]
+  uses: [game]
+  # not sure if to include this one
