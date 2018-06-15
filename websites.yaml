@@ -208,16 +208,6 @@
   tags: [deep-learning]
   uses: [demo]
 
-- name: "Neural Slime Volleyball"
-  desc: "HTML5-JS Slime Volleyball clone created using ConvNetJS."
-  url: http://otoro.net/slimevolley/
-  repo: https://github.com/hardmaru/neuralslimevolley
-  license: GPL
-  writeup: http://blog.otoro.net/2017/05/19/teaching-machines-to-draw/
-  authors: [hardmaru]
-  tags: [deep-learning]
-  uses: [demo]
-
 - name: "Can a neural network learn to recognize doodling?"
   desc: "HTML5-JS Slime Volleyball clone created using ConvNetJS."
   url: https://quickdraw.withgoogle.com/
