@@ -232,7 +232,7 @@
 - name: "Caffe Demos"
   desc: "Web image classification demo"
   url: http://demo.caffe.berkeleyvision.org/
-  repo: https://github.com/BVLC/caffe
+  repo: ""
   license: BSD 2-Clause license
   writeup: http://caffe.berkeleyvision.org/
   authors: [Yangqing Jia]
