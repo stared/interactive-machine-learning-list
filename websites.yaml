@@ -227,7 +227,7 @@
   writeup: https://mi.eng.cam.ac.uk/projects/segnet/#research
   authors: [Alex Kendall, Vijay Badrinarayanan, Roberto Cipolla]
   tags: [deep-learning, cnn, segmentation]
-  uses: [demo, library]
+  uses: [demo, backend-dependent]
 
 - name: "Caffe Demos"
   desc: "Web image classification demo"
@@ -237,7 +237,7 @@
   writeup: http://caffe.berkeleyvision.org/
   authors: [Yangqing Jia]
   tags: [deep-learning, cnn, classification, image-classification]
-  uses: [demo, library]
+  uses: [demo, backend-dependent]
 
 - name: "LSTM Music Maker"
   desc: "How evlolved LSTMS improvise on a melody you specify?"
