@@ -218,3 +218,53 @@
   tags: [deep-learning]
   uses: [game]
   # not sure if to include this one
+
+- name: "SegNet"
+  desc: "A Deep Convolutional Encoder-Decoder Architecture for Robust Semantic Pixel-Wise Labelling"
+  url: https://mi.eng.cam.ac.uk/projects/segnet/#demo
+  repo: https://github.com/alexgkendall/caffe-segnet
+  license: CC BY NC
+  writeup: https://mi.eng.cam.ac.uk/projects/segnet/#research
+  authors: [Alex Kendall, Vijay Badrinarayanan, Roberto Cipolla]
+  tags: [deep-learning, cnn, segmentation]
+  uses: [demo, backend-dependent]
+
+- name: "Caffe Demos"
+  desc: "Web image classification demo"
+  url: http://demo.caffe.berkeleyvision.org/
+  repo: ""
+  license: BSD 2-Clause license
+  writeup: http://caffe.berkeleyvision.org/
+  authors: [Yangqing Jia]
+  tags: [deep-learning, cnn, classification, image-classification]
+  uses: [demo, backend-dependent]
+
+- name: "LSTM Music Maker"
+  desc: "How evlolved LSTMS improvise on a melody you specify?"
+  url: https://www.sentient.ai/sentient-labs/ea/lstm-music/
+  repo: ""
+  license: ""
+  writeup: https://arxiv.org/abs/1803.04439
+  authors: [Aditya Rawal, Risto Miikkulainen]
+  tags: [deep-learning, lstm, music]
+  uses: [demo]
+
+- name: "OMNI Draw"
+  desc: "How do the learned models perceive the characters you draw?"
+  url: https://www.sentient.ai/sentient-labs/ea/omni-draw/
+  repo: ""
+  license: ""
+  writeup: https://arxiv.org/abs/1803.03745
+  authors: [Jason Liang, Elliot Meyerson, Risto Miikkulainen]
+  tags: [deep-learning, cmtr, omniglot]
+  uses: [demo]
+
+- name: "Celeb Match"
+  desc: "Which celebrity faces match best the attribute values you specify?"
+  url: https://www.sentient.ai/sentient-labs/ea/celeb-match/
+  repo: ""
+  license: ""
+  writeup: https://arxiv.org/abs/1803.04062
+  authors: [Elliot Meyerson, Risto Miikkulainen]
+  tags: [deep-learning, pta]
+  uses: [demo]
