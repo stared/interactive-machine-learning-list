@@ -268,3 +268,13 @@
   authors: [Elliot Meyerson, Risto Miikkulainen]
   tags: [deep-learning, pta]
   uses: [demo]
+
+- name: "Neural Titanic"
+  desc: "This visualization uses TensorFlow.js to train a neural network on the titanic dataset"
+  url: https://andrewnetwork.github.io/NeuralTitanic/dist/
+  repo: Neural Titanic
+  license: MIT
+  writeup: ""
+  authors: [Andrew Ribeiro]
+  tags: [mlp, titanic]
+  uses: [demo, tensorflowjs]
