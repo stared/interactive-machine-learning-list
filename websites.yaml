@@ -307,4 +307,4 @@
   writeup: ""
   authors: [Thomas Delteil]
   tags: [neural-networks, deep-learning, search, mxnet]
-  uses: [tutorial, demo]
+  uses: [tutorial, demo, backend-dependent]
