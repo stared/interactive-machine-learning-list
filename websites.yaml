@@ -96,7 +96,7 @@
   repo: https://github.com/mrpandey/d3graphTheory
   license: GPL
   writeup: ""
-  authors: [Stephanie Yee, Tony Chu]
+  authors: [Avinash Pandey]
   tags: [graph]
   uses: [demo, tutorial]
 
