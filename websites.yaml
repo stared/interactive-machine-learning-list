@@ -282,9 +282,19 @@
 - name: "Neural Titanic"
   desc: "This visualization uses TensorFlow.js to train a neural network on the titanic dataset"
   url: https://andrewnetwork.github.io/NeuralTitanic/dist/
-  repo: Neural Titanic
+  repo: https://github.com/Andrewnetwork/NeuralTitanic
   license: MIT
   writeup: ""
   authors: [Andrew Ribeiro]
   tags: [mlp, titanic]
   uses: [demo, tensorflowjs]
+
+- name: "Backpropagation algorithm"
+  desc: "The backpropagation algorithm is essential for training large neural networks quickly. This article explains how the algorithm works."
+  url: https://google-developers.appspot.com/machine-learning/crash-course/backprop-scroll/
+  repo: ""
+  license: ""
+  writeup: ""
+  authors: []
+  tags: [neural-networks, math]
+  uses: [tutorial]

@@ -13,6 +13,9 @@ interactive-machine-learning-list"><img style="position: absolute; top: 0; right
       <li v-for="website in websites">
         <a :href="website.url">{{ website.name }}</a><br>
         by {{ etAl(website.authors) }}<br>
+        <span v-if="website.desc">
+          {{ website.desc }})<br>
+        </span>
         <span v-if="website.repo">
           <a :href="website.repo">source code</a> ({{ website.license }}),
         </span>
