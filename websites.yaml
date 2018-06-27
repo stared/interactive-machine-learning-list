@@ -295,6 +295,6 @@
   repo: ""
   license: ""
   writeup: ""
-  authors: []
+  authors: [Daniel Smilkov]
   tags: [neural-networks, math]
   uses: [tutorial]
