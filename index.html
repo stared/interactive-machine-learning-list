@@ -11,8 +11,7 @@ interactive-machine-learning-list"><img style="position: absolute; top: 0; right
   <div id="app">
     <ul>
       <li v-for="website in websites">
-        <a :href="website.url">{{ website.name }}</a><br>
-        by {{ etAl(website.authors) }}<br>
+        <a :href="website.url">{{ website.name }}</a> by {{ etAl(website.authors) }}<br>
         <span v-if="website.desc">
           {{ website.desc }})<br>
         </span>
