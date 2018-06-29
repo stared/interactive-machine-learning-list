@@ -298,3 +298,13 @@
   authors: [Daniel Smilkov]
   tags: [neural-networks, math]
   uses: [tutorial]
+  
+- name: "Visual Search"
+  desc: "This website uses deep neural networks to compute a fingerprint of a query image and retrieves images with similar visual features."
+  url: https://thomasdelteil.github.io/VisualSearch_MXNet/
+  repo: "https://github.com/ThomasDelteil/VisualSearch_MXNet"
+  license: ""
+  writeup: ""
+  authors: [Thomas Delteil]
+  tags: [neural-networks, deep-learning, search, mxnet]
+  uses: [tutorial, demo, backend-dependent]
