@@ -72,7 +72,7 @@
   tags: [mlp]
   uses: [demo]
 
-- name: "A visual introduction to machine learning"
+- name: "A visual introduction to machine learning (Part 1)"
   url: http://www.r2d3.us/visual-intro-to-machine-learning-part-1/
   repo: ""
   license: ""
@@ -81,12 +81,22 @@
   tags: [decision-tree]
   uses: [demo, tutorial]
 
+- name: "A visual introduction to machine learning (Part 2)"
+  desc: Model Tuning and the Bias-Variance Tradeoff
+  url: http://www.r2d3.us/visual-intro-to-machine-learning-part-2/
+  repo: ""
+  license: ""
+  writeup: ""
+  authors: [Stephanie Yee, Tony Chu]
+  tags: [decision-tree, overfitting]
+  uses: [demo, tutorial]
+
 - name: "D3 Graph Theory"
   url: https://mrpandey.github.io/d3graphTheory/index.html
   repo: https://github.com/mrpandey/d3graphTheory
   license: GPL
   writeup: ""
-  authors: [Stephanie Yee, Tony Chu]
+  authors: [Avinash Pandey]
   tags: [graph]
   uses: [demo, tutorial]
 
@@ -272,9 +282,29 @@
 - name: "Neural Titanic"
   desc: "This visualization uses TensorFlow.js to train a neural network on the titanic dataset"
   url: https://andrewnetwork.github.io/NeuralTitanic/dist/
-  repo: Neural Titanic
+  repo: https://github.com/Andrewnetwork/NeuralTitanic
   license: MIT
   writeup: http://kexp.io/intro_tensorflowjs/
   authors: [Andrew Ribeiro]
   tags: [mlp, titanic]
   uses: [demo, tensorflowjs]
+
+- name: "Backpropagation algorithm"
+  desc: "The backpropagation algorithm is essential for training large neural networks quickly. This article explains how the algorithm works."
+  url: https://google-developers.appspot.com/machine-learning/crash-course/backprop-scroll/
+  repo: ""
+  license: ""
+  writeup: ""
+  authors: [Daniel Smilkov]
+  tags: [neural-networks, math]
+  uses: [tutorial]
+  
+- name: "Visual Search"
+  desc: "This website uses deep neural networks to compute a fingerprint of a query image and retrieves images with similar visual features."
+  url: https://thomasdelteil.github.io/VisualSearch_MXNet/
+  repo: "https://github.com/ThomasDelteil/VisualSearch_MXNet"
+  license: ""
+  writeup: ""
+  authors: [Thomas Delteil]
+  tags: [neural-networks, deep-learning, search, mxnet]
+  uses: [tutorial, demo, backend-dependent]
