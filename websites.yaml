@@ -274,7 +274,7 @@
   url: https://andrewnetwork.github.io/NeuralTitanic/dist/
   repo: Neural Titanic
   license: MIT
-  writeup: ""
+  writeup: http://kexp.io/intro_tensorflowjs/
   authors: [Andrew Ribeiro]
   tags: [mlp, titanic]
   uses: [demo, tensorflowjs]
