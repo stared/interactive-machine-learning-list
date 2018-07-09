@@ -318,3 +318,13 @@
   authors: [Rasmus Bååth]
   tags: [bayesian, mcmc, statistics]
   uses: [demo, library]
+
+- name: Basic Neural Network Math
+  desc: "A Visual And Interactive Look at Basic Neural Network Math"
+  url: https://jalammar.github.io/feedforward-neural-networks-visual-interactive/
+  repo: https://github.com/jalammar/jalammar.github.io/blob/master/_posts/2018-03-23-feedforward-neural-networks-visual-interactive.md
+  license: ""
+  writeup: ""
+  authors: [Jay Alammar]
+  tags: [neural-networks]
+  uses: [tutorial]
