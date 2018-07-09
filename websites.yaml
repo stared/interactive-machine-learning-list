@@ -298,7 +298,7 @@
   authors: [Daniel Smilkov]
   tags: [neural-networks, math]
   uses: [tutorial]
-  
+
 - name: "Visual Search"
   desc: "This website uses deep neural networks to compute a fingerprint of a query image and retrieves images with similar visual features."
   url: https://thomasdelteil.github.io/VisualSearch_MXNet/
@@ -308,3 +308,13 @@
   authors: [Thomas Delteil]
   tags: [neural-networks, deep-learning, search, mxnet]
   uses: [tutorial, demo, backend-dependent]
+
+- name: bayes.js
+  desc: "An implementation of a small MCMC framework and some likelihood functions for doing Bayes stats in the browser."
+  url: https://github.com/rasmusab/bayes.js
+  repo: https://github.com/rasmusab/bayes.js
+  license: MIT
+  writeup: ""
+  authors: [Rasmus Bååth]
+  tags: [bayesian, mcmc, statistics]
+  uses: [demo, library]
