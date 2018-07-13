@@ -337,4 +337,4 @@
   writeup: https://medium.com/tensorflow/seedbank-discover-machine-learning-examples-2ff894542b57
   authors: [Michael Tyka]
   tags: [neural-networks, deep-learning]
-  uses: [repository, backend-dependent]]
+  uses: [repository, backend-dependent]
