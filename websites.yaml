@@ -335,6 +335,6 @@
   repo: ""
   license: ""
   writeup: https://medium.com/tensorflow/seedbank-discover-machine-learning-examples-2ff894542b57
-  authors: [Michael Tyka]
+  authors: [Mike Tyka, Sures Kumar Thoddu Srinivasan, Chris Boudreaux, Simon Doury, Harini Krishnamurthy, Mike Dory, Gabriel Schubiner, Kyle Pedersen, Artists & Machine Intelligence, Colaboratory teams]
   tags: [neural-networks, deep-learning]
   uses: [repository, backend-dependent]
