@@ -328,3 +328,13 @@
   authors: [Jay Alammar]
   tags: [neural-networks]
   uses: [tutorial]
+
+- name: Seedbank
+  desc: "Collection of Interactive Machine Learning Examples"
+  url: http://tools.google.com/seedbank/
+  repo: ""
+  license: ""
+  writeup: https://medium.com/tensorflow/seedbank-discover-machine-learning-examples-2ff894542b57
+  authors: [Michael Tyka]
+  tags: [neural-networks, deep-learning]
+  uses: [repository, backend-dependent]]
