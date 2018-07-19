@@ -1,14 +1,14 @@
 Vue.component('tag-selector', {
   props: ['all-tags'],
-  template: document.getElementById('tag-selector')
-})
+  template: document.getElementById('tag-selector'),
+});
 
 
 const app = new Vue({
   el: '#app',
   data: {
     websites: [],
-    allTags: [],
+    allTags: []
   },
   created: function () {
     const that = this;

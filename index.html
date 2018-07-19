@@ -10,7 +10,7 @@
 interactive-machine-learning-list"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
   <div id="app">
     <div>
-      <tag-selector :all-tags="allTags" />
+      <tag-selector :all-tags="allTags" :selected-tags="selectedTags"/>
     </div>
 
     <ul>
@@ -32,7 +32,9 @@ interactive-machine-learning-list"><img style="position: absolute; top: 0; right
 
   <template id="tag-selector">
     <div> 
-      <span v-for="tag in allTags" v-bind:class="{ active: true }">
+      <span
+        v-for="tag in allTags"
+        class="tag">
         [{{ tag }}]
       </span>
     </div>
