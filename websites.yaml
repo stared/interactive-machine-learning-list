@@ -337,4 +337,15 @@
   writeup: https://medium.com/tensorflow/seedbank-discover-machine-learning-examples-2ff894542b57
   authors: [Mike Tyka, Sures Kumar Thoddu Srinivasan, Chris Boudreaux, Simon Doury, Harini Krishnamurthy, Mike Dory, Gabriel Schubiner, Kyle Pedersen, Artists & Machine Intelligence, Colaboratory teams]
   tags: [neural-networks, deep-learning]
-  uses: [repository, backend-dependent]
+  uses: [collection, backend-dependent]
+
+- name: "The Beginner's Guide to Dimensionality Reduction"
+  desc: "Explore the methods that data scientists use to visualize high-dimensional data."
+  url: https://idyll.pub/post/dimensionality-reduction-293e465c2a3443e8941b016d/
+  repo: https://github.com/mathisonian/dimensionality-reduction
+  license: MIT
+  writeup: ""
+  authors: [Matthew Conlen, Fred Hohman]
+  tags: [pca, tsne]
+  uses: [tutorial]
+
