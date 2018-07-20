@@ -10,10 +10,10 @@
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
 <body>
-<a href="https://github.com/stared/
-interactive-machine-learning-list"><img style="position: fixed; z-index: 1000 ;top: 0; right: 0; border: 0;"
-                                        src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"
-                                        alt="Fork me on GitHub"></a>
+<a href="https://github.com/stared/interactive-machine-learning-list">
+    <img style="position: fixed; z-index: 1000 ;top: 0; right: 0; border: 0;"
+         src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"
+         alt="Fork me on GitHub"></a>
 <div id="app">
     <!-- Always shows a header, even in smaller screens. -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -48,37 +48,39 @@ interactive-machine-learning-list"><img style="position: fixed; z-index: 1000 ;t
                     <tag-selector :all-tags="allTags"/>
                 </div>
 
-                <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Welcome</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Mauris sagittis pellentesque lacus eleifend lacinia...
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                            Get Started
-                        </a>
-                    </div>
-                    <div class="mdl-card__menu">
-                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                            <i class="material-icons">share</i>
-                        </button>
-                    </div>
-                </div>
 
                 <ul class="mdl-grid">
                     <li class="mdl-cell mdl-cell--4-col" v-for="website in websites">
-                        <a :href="website.url"><h2>{{ website.name }}</h2></a> by {{ etAl(website.authors) }}<br>
-                        <span v-if="website.desc">{{ website.desc }}<br></span>
+                        <a :href="website.url"><h2>{{ website.name }}</h2></a><br>
+
+
                         <span v-if="website.repo">
-          <a :href="website.repo">source code</a> ({{ website.license }}),
-        </span>
+                            <a :href="website.repo">source code</a> ({{ website.license }}),
+                        </span>
                         <a v-if="website.writeup" :href="website.writeup">blog post</a><br>
                         <span v-for="tag in website.tags">[{{ tag }}]</span>
                         <span v-for="use in website.uses">[{{ use }}]</span>
                         <br><br>
+
+                        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">{{ website.name }}</h2>
+                                by {{ etAl(website.authors) }}
+                            </div>
+                            <div v-if="website.desc" class="mdl-card__supporting-text">
+                                {{ website.desc }}
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    Get Started
+                                </a>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                                    <i class="material-icons">share</i>
+                                </button>
+                            </div>
+                        </div>
                     </li>
                 </ul>
 
@@ -105,7 +107,7 @@ interactive-machine-learning-list"><img style="position: fixed; z-index: 1000 ;t
         </main>
     </div>
 
-<!--app end-->
+    <!--app end-->
 </div>
 <script src="main.js"></script>
 </body>
