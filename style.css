@@ -17,6 +17,7 @@ h2 {
 
 a {
     /*margin-right: .5rem;*/
+    text-decoration: none;
     cursor: pointer;
 }
 

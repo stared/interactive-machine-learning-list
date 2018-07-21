@@ -30,7 +30,6 @@ const app = new Vue({
             } else {
                 websites.filter(function(site) {
                     filters.forEach( filter => {
-                        console.log(site.tags.includes(filter));
                         if  ( site.tags.includes(filter) ||  site.uses.includes(filter) ) {
                             results.push(site);
                         }
