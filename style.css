@@ -102,13 +102,23 @@ ul > li {
 }
 .tag:hover{
     color: white;
+    background: rgba(255,64,129, 0.75);
+    text-decoration: none;
+}
+.tag.active{
+    color: white;
     background: rgb(255,64,129);
     text-decoration: none;
 }
 
-
+.delete{
+    position: relative;
+    top: .25rem;
+    font-size: 16px;
+}
 
 footer{
     position: relative;
     z-index: 3;
+    margin-top: 3rem;
 }

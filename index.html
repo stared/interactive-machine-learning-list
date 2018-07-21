@@ -41,10 +41,21 @@
                         <a v-for="tag in allTags"
                            class="tag"
                             @click="addToFilters(tag)"
+                        v-bind:class="{ active: checkActive(tag) > -1 }"
                         >
                             {{ tag }}
                         </a>
-                        <div v-if="filters.length">{{ filters }}</div>
+                        <span v-if="filters.length">
+                            Selected {{filters.length}} filters
+                        </span>
+                        <a class="tag"
+                           v-if="filters.length"
+                           style="background: rgb(255,64,129); color: white"
+                           @click="clearAllFilters"
+                        >
+                            <i class="material-icons delete">delete</i>
+                            Clear
+                        </a>
                     </div>
                 </template>
 

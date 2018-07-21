@@ -44,8 +44,13 @@ const app = new Vue({
       }
     },
     addToFilters: function (tag) {
-        const that = this;
         this.filters.push(tag);
+    },
+    checkActive: function (tag) {
+        return this.filters.indexOf(tag)
+    },
+    clearAllFilters: function () {
+        this.filters = [];
     }
   }
 });
