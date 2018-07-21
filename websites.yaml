@@ -6,6 +6,7 @@
   authors: [Andrej Karpathy]
   tags: [rnn, lstm, nlp]
   uses: [demo, library]
+  img: https://images.unsplash.com/photo-1532109676976-49323426ef1d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ccea5896e15e3cd034cdf6baaaef7b21&auto=format&fit=crop&w=1350&q=80
 
 - name: "ConvNetJS"
   url: https://cs.stanford.edu/people/karpathy/recurrentjs/

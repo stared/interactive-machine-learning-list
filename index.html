@@ -19,6 +19,7 @@
 </a>
 <div id="app">
     <!-- Always shows a header, even in smaller screens. -->
+
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
@@ -32,15 +33,17 @@
                 </nav>
             </div>
         </header>
-        <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Tags</span>
-            <nav class="mdl-navigation">
-                <tag-selector :all-tags="allTags"/>
-                <!--<a v-for="tag in allTags">{{tag}}</a>-->
-            </nav>
-        </div>
         <main class="mdl-layout__content" id="particles-js">
             <div class="page-content"><!-- Your content goes here -->
+
+                <template id="tag-selector">
+                    <div class="tags-wrapper">
+                        <a v-for="tag in allTags" class="tag">
+                            {{ tag }}
+                        </a>
+                    </div>
+                </template>
+
                 <ul class="mdl-grid">
                     <li class="mdl-cell mdl-cell--4-col"
                         v-for="(website, id) in websites"
@@ -49,11 +52,12 @@
                             <div class="mdl-card__title">
                                 <h3 class="mdl-card__title-text">
                                     {{ website.name }}
-                                    <template v-if="website.license">({{ website.license }})</template>
+                                    <template v-if="website.license">({{ website.license }}) by <template style="fontSize: 10px">{{ etAl(website.authors) }}</template></template>
+
                                 </h3>
                             </div>
                             <div class="mdl-card__supporting-text">
-                                <span>by {{ etAl(website.authors) }}</span>
+
                                 <div class="mdl-grid" v-if="website.tags && website.uses">
                                     <div class="mdl-cell mdl-cell--6-col">
                                         <i class="material-icons">label</i>
@@ -69,15 +73,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="mdl-card__actions mdl-card--border" v-if="website.desc">
-                                <p> {{ website.desc }}</p>
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border" v-if="website.writeup">
-                                <a :href="website.writeup"
-                                   class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                    Read More
-                                </a>
-                            </div>
+
                             <div class="mdl-card__menu" v-if="website.repo">
                                 <a :href="website.repo" :id="id + 'repo'">
                                     <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
@@ -97,6 +93,14 @@
                                     Website
                                 </div>
                             </div>
+
+                            <div class="mdl-card__actions mdl-card--border mdl-card--bottom" v-if="website.writeup || website.desc">
+                                <span v-if="website.desc"> {{ website.desc }}</span><br>
+                                <a :href="website.writeup"
+                                   class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    Read More
+                                </a>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -115,11 +119,7 @@
         </main>
     </div>
 
-    <template id="tag-selector">
-        <div>
-            <a v-for="tag in allTags" class="tag">[{{ tag }}]</a>
-        </div>
-    </template>
+
 
 
     <!--app end-->

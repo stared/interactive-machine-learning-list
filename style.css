@@ -25,6 +25,7 @@ ul > li {
     padding-top: 3rem;
 }
 .mdl-cell{
+    overflow-y: auto;
     /*margin: 1rem;*/
     /*box-sizing: border-box;*/
 }
@@ -34,6 +35,9 @@ ul > li {
     width: 80%;
     position: relative;
     z-index: 2;
+    background-size: cover;
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+    back
 }
 .mdl-card__title{
     max-width: 80%;
@@ -56,8 +60,13 @@ ul > li {
 .mdl-card__supporting-text > .mdl-grid {
     padding: 0;
 }
+.mdl-card--bottom{
+    bottom: 0;
+    position: absolute;
+}
 
 .mdl-card__actions{
+    font-size: 14px;
   padding: 0 1rem;
 }
 .right{
@@ -71,19 +80,33 @@ ul > li {
     z-index: 0;
 }
 
+.tags-wrapper{
+    margin: 2rem auto;
+    max-width: 70vw;
+    /*display: block;*/
+    position: relative;
+    z-index: 3;
+    text-align: center;
+}
+
 .tag{
+    display: inline-block;
     border: 1px solid rgb(255,64,129);
     color: rgb(255,64,129);
-    padding: 0.25rem .75rem;
+    padding: 0.15rem .75rem;
     border-radius: 1rem;
     text-decoration: none;
     font-size: 12px;
+    white-space: nowrap;
+    margin-bottom: .5rem;
 }
 .tag:hover{
     color: white;
     background: rgb(255,64,129);
     text-decoration: none;
 }
+
+
 
 footer{
     position: relative;
