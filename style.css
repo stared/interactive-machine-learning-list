@@ -51,7 +51,7 @@ ul > li {
 .mdl-card__supporting-text i.material-icons{
    font-size: 20px;
     position: relative;
-    top: .5rem;
+    top: 0.35rem;
 }
 .mdl-card__supporting-text > .mdl-grid {
     padding: 0;
@@ -69,6 +69,20 @@ ul > li {
     top: 0;
     left: 0;
     z-index: 0;
+}
+
+.tag{
+    border: 1px solid rgb(255,64,129);
+    color: rgb(255,64,129);
+    padding: 0.25rem .75rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    font-size: 12px;
+}
+.tag:hover{
+    color: white;
+    background: rgb(255,64,129);
+    text-decoration: none;
 }
 
 footer{

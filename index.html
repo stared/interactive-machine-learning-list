@@ -29,17 +29,14 @@
                 <!-- Navigation. We hide it in small screens. -->
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
                     <a class="mdl-navigation__link" href="">Link</a>
-                    <a class="mdl-navigation__link" href="">Link</a>
-                    <a class="mdl-navigation__link" href="">Link</a>
-                    <a class="mdl-navigation__link" href="">Link</a>
                 </nav>
             </div>
         </header>
         <div class="mdl-layout__drawer">
             <span class="mdl-layout-title">Tags</span>
             <nav class="mdl-navigation">
-                <!--<tag-selector :all-tags="allTags"/>-->
-                <a v-for="tag in allTags">{{tag}}</a>
+                <tag-selector :all-tags="allTags"/>
+                <!--<a v-for="tag in allTags">{{tag}}</a>-->
             </nav>
         </div>
         <main class="mdl-layout__content" id="particles-js">
@@ -60,7 +57,9 @@
                                 <div class="mdl-grid" v-if="website.tags && website.uses">
                                     <div class="mdl-cell mdl-cell--6-col">
                                         <i class="material-icons">label</i>
-                                        <a v-for="tag in website.tags">{{ tag }}</a>
+                                        <span v-for="tag in website.tags">
+                                          <a class="tag">{{ tag }}</a>
+                                        </span>
                                     </div>
                                     <div class="mdl-cell mdl-cell--6-col right">
                                         <i class="material-icons">timeline</i>
@@ -70,10 +69,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <p v-if="website.desc"> {{ website.desc }}</p>
-                                <a v-if="website.writeup" :href="website.writeup" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                    Blog
+                            <div class="mdl-card__actions mdl-card--border" v-if="website.desc">
+                                <p> {{ website.desc }}</p>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border" v-if="website.writeup">
+                                <a :href="website.writeup"
+                                   class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    Read More
                                 </a>
                             </div>
                             <div class="mdl-card__menu" v-if="website.repo">
@@ -99,12 +101,6 @@
                     </li>
                 </ul>
 
-                <template id="tag-selector">
-                    <div>
-                        <span v-for="tag in allTags" class="tag">[{{ tag }}]</span>
-                    </div>
-                </template>
-
                 <footer class="mdl-mini-footer">
                     <div class="mdl-mini-footer__left-section">
                         <div class="mdl-logo">Interactive Machine Learning List</div>
@@ -119,6 +115,11 @@
         </main>
     </div>
 
+    <template id="tag-selector">
+        <div>
+            <a v-for="tag in allTags" class="tag">[{{ tag }}]</a>
+        </div>
+    </template>
 
 
     <!--app end-->

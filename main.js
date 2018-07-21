@@ -17,7 +17,8 @@ const app = new Vue({
   el: '#app',
   data: {
     websites: [],
-    allTags: []
+    allTags: [],
+    filter: []
   },
   created: function () {
     const that = this;
