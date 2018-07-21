@@ -166,9 +166,11 @@ ul > li {
 }
 .tags-wrapper > .tag {
     margin-bottom: .5rem;
+    margin-right: .5rem;
 }
 
 .tag {
+    font-weight: bold;
     display: inline-block;
     background: rgba(255, 255, 255, .75);
     border: 1px solid rgb(255, 64, 129);
@@ -176,7 +178,7 @@ ul > li {
     padding: 0.15rem .75rem;
     border-radius: 1rem;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 11px;
     white-space: nowrap;
     margin-bottom: .5rem;
 }
