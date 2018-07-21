@@ -52,20 +52,20 @@
                             <div class="mdl-card__title">
                                 <h3 class="mdl-card__title-text">
                                     {{ website.name }}
-                                    ({{ website.license }})
+                                    <template v-if="website.license">({{ website.license }})</template>
                                 </h3>
                             </div>
                             <div class="mdl-card__supporting-text">
                                 <span>by {{ etAl(website.authors) }}</span>
-                                <div class="mdl-grid">
+                                <div class="mdl-grid" v-if="website.tags && website.uses">
                                     <div class="mdl-cell mdl-cell--6-col">
                                         <i class="material-icons">label</i>
-                                        <span v-for="tag in website.tags">[{{ tag }}]</span>
+                                        <a v-for="tag in website.tags">{{ tag }}</a>
                                     </div>
                                     <div class="mdl-cell mdl-cell--6-col right">
                                         <i class="material-icons">timeline</i>
                                         <span v-for="use in website.uses">
-                                            <span class="tag">[{{ use }}]</span>
+                                            <a class="tag">{{ use }}</a>
                                         </span>
                                     </div>
                                 </div>
@@ -79,7 +79,7 @@
                             <div class="mdl-card__menu" v-if="website.repo">
                                 <a :href="website.repo" :id="id + 'repo'">
                                     <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                                        <i class="material-icons">share</i>
+                                        <i class="material-icons">code</i>
                                     </button>
                                 </a>
                                 <div class="mdl-tooltip" :data-mdl-for="id + 'repo'">
@@ -111,6 +111,7 @@
                         <ul class="mdl-mini-footer__link-list">
                             <li><a href="#">Help</a></li>
                             <li><a href="#">Authors</a></li>
+                            <li><a href="#">Project on Github</a></li>
                         </ul>
                     </div>
                 </footer>
@@ -118,13 +119,7 @@
         </main>
     </div>
 
-    <script>
-        /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-        particlesJS.load('particles-js', 'particles.json', function() {
-            console.log('callback - particles.js config loaded');
-        });
 
-    </script>
 
     <!--app end-->
 </div>

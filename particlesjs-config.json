@@ -8,7 +8,7 @@
       }
     },
     "color": {
-      "value": "#00108c"
+      "value": "#a6387b"
     },
     "shape": {
       "type": "circle",
@@ -48,8 +48,8 @@
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#00108c",
-      "opacity": 0.04008530152163807,
+      "color": "#a6387b",
+      "opacity": 0.4008530152163807,
       "width": 0.5
     },
     "move": {
@@ -68,7 +68,7 @@
     }
   },
   "interactivity": {
-    "detect_on": "canvas",
+    "detect_on": "window",
     "events": {
       "onhover": {
         "enable": true,

@@ -1,8 +1,22 @@
 html{
     /*font-size: 14px;*/
 }
+body{
+    background: rgba(0,0,0,.1);
+}
+
+a{
+    margin-left: .5rem;
+    cursor: pointer;
+}
+a:hover{
+    text-decoration: underline;
+}
 ul > li {
     list-style: none;
+}
+.mdl-layout__container {
+    top: 0;
 }
 .mdl-navigation{
     padding: 0 1rem;
@@ -22,7 +36,7 @@ ul > li {
     z-index: 2;
 }
 .mdl-card__title{
-    max-width: 90%;
+    max-width: 80%;
     padding-bottom: 0;
 }
 .mdl-card__supporting-text{
@@ -36,6 +50,8 @@ ul > li {
 }
 .mdl-card__supporting-text i.material-icons{
    font-size: 20px;
+    position: relative;
+    top: .5rem;
 }
 .mdl-card__supporting-text > .mdl-grid {
     padding: 0;
@@ -46,4 +62,16 @@ ul > li {
 }
 .right{
     text-align: right;
+}
+
+.particles-js-canvas-el{
+   position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+footer{
+    position: relative;
+    z-index: 3;
 }
