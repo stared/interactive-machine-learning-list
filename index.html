@@ -83,19 +83,17 @@
                                 <div class="mdl-card__supporting-text">
                                     by {{ etAl(website.authors) }}
                                     <div class="mdl-grid" v-if="website.tags && website.uses">
-                                        <!--<div class="mdl-cell mdl-cell&#45;&#45;6-col">-->
+
                                         <div>
                                             <i class="material-icons" :id="id + 'tagIcon'">label</i>
                                             <div class="mdl-tooltip" :data-mdl-for="id + 'tagIcon'">
                                                 Tags
                                             </div>
-
                                             <span v-for="tag in website.tags">
                                           <a class="tag">{{ tag }}</a>
                                         </span>
                                         </div>
-                                        <!--</div>-->
-                                        <!--<div class="mdl-cell mdl-cell&#45;&#45;6-col right">-->
+
                                         <div>
 
                                             <i class="material-icons" :id="id + 'tagUses'">timeline</i>
@@ -106,7 +104,6 @@
                                             <a class="tag">{{ use }}</a>
                                         </span>
                                         </div>
-                                        <!--</div>-->
                                     </div>
                                 </div>
 
