@@ -73,51 +73,61 @@
                         v-for="(website, id) in websites"
                     >
                         <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-                            <div class="mdl-card__title">
-                                <h3 class="mdl-card__title-text">
-                                    {{ website.name }}
-                                    <template v-if="website.license">({{ website.license }})</template>
-                                </h3>
-                            </div>
-                            <div class="mdl-card__supporting-text">
-                                by {{ etAl(website.authors) }}
-                                <div class="mdl-grid" v-if="website.tags && website.uses">
-                                    <!--<div class="mdl-cell mdl-cell&#45;&#45;6-col">-->
-                                    <div>
-                                        <i class="material-icons">label</i>
-                                        <span v-for="tag in website.tags">
+                            <div class="background" :style="{backgroundImage: 'url(' + website.img + ')'}">
+                                <div class="mdl-card__title">
+                                    <h3 class="mdl-card__title-text">
+                                        {{ website.name }}
+                                        <template v-if="website.license">({{ website.license }})</template>
+                                    </h3>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    by {{ etAl(website.authors) }}
+                                    <div class="mdl-grid" v-if="website.tags && website.uses">
+                                        <!--<div class="mdl-cell mdl-cell&#45;&#45;6-col">-->
+                                        <div>
+                                            <i class="material-icons" :id="id + 'tagIcon'">label</i>
+                                            <div class="mdl-tooltip" :data-mdl-for="id + 'tagIcon'">
+                                                Tags
+                                            </div>
+
+                                            <span v-for="tag in website.tags">
                                           <a class="tag">{{ tag }}</a>
                                         </span>
-                                    </div>
-                                    <!--</div>-->
-                                    <!--<div class="mdl-cell mdl-cell&#45;&#45;6-col right">-->
-                                  <div>
-                                      <i class="material-icons">timeline</i>
-                                      <span v-for="use in website.uses">
+                                        </div>
+                                        <!--</div>-->
+                                        <!--<div class="mdl-cell mdl-cell&#45;&#45;6-col right">-->
+                                        <div>
+
+                                            <i class="material-icons" :id="id + 'tagUses'">timeline</i>
+                                            <div class="mdl-tooltip" :data-mdl-for="id + 'tagUses'">
+                                                Uses
+                                            </div>
+                                            <span v-for="use in website.uses">
                                             <a class="tag">{{ use }}</a>
                                         </span>
-                                  </div>
-                                    <!--</div>-->
-                                </div>
-                            </div>
-
-                            <div class="mdl-card__menu" v-if="website.repo">
-                                <a :href="website.repo" :id="id + 'repo'">
-                                    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                                        <i class="material-icons">code</i>
-                                    </button>
-                                </a>
-                                <div class="mdl-tooltip" :data-mdl-for="id + 'repo'">
-                                    Repository
+                                        </div>
+                                        <!--</div>-->
+                                    </div>
                                 </div>
 
-                                <a :href="website.ulr" :id="id + 'www'">
-                                    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                                        <i class="material-icons">language</i>
-                                    </button>
-                                </a>
-                                <div class="mdl-tooltip" :data-mdl-for="id + 'www'">
-                                    Website
+                                <div class="mdl-card__menu" v-if="website.repo">
+                                    <a :href="website.repo" :id="id + 'repo'">
+                                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                                            <i class="material-icons">code</i>
+                                        </button>
+                                    </a>
+                                    <div class="mdl-tooltip" :data-mdl-for="id + 'repo'">
+                                        Repository
+                                    </div>
+
+                                    <a :href="website.ulr" :id="id + 'www'">
+                                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                                            <i class="material-icons">language</i>
+                                        </button>
+                                    </a>
+                                    <div class="mdl-tooltip" :data-mdl-for="id + 'www'">
+                                        Website
+                                    </div>
                                 </div>
                             </div>
 
