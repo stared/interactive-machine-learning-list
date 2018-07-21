@@ -50,6 +50,7 @@
                                    v-bind:class="{ active: checkActive(tag) > -1 }"
                                 >
                                     {{ tag }}
+                                    <!--{{getTagCount(tag)}}-->
                                 </a>
                                 <p v-if="filters.length">
                                     Selected {{filters.length}} filters
@@ -143,9 +144,9 @@
 
                 <footer class="mdl-mini-footer">
                     <div class="mdl-mini-footer__left-section">
-                        <div class="mdl-logo"><a href="">Interactive Machine Learning List</a></div>
+                        <div class="mdl-logo"><a href="https://github.com/stared/interactive-machine-learning-list">Interactive Machine Learning List</a></div>
                         <ul class="mdl-mini-footer__link-list">
-                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Want to contribute?</a></li>
                             <li><a href="https://github.com/stared/interactive-machine-learning-list">Project on Github</a></li>
                             <li><a href="https://github.com/fogelkuba">Front-end by Jakub Fogel</a></li>
                             <li><a href='https://pl.freepik.com/darmowe-wektory/mozg-mechaniczna_769574.htm'>Illustration

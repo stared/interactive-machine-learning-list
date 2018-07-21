@@ -74,8 +74,11 @@ const app = new Vue({
             this.filters = [];
         },
         getTagCount(tag){
-            let count = 0;
-            // tag
+            // let count = 0;
+            // this.filteredWebsites.forEach(item => {
+            //     (item.tag == tag || item.uses == tag)  ? count++ : '';
+            // });
+            // return count;
         }
     }
 });

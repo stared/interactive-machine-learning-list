@@ -232,4 +232,13 @@ footer {
     .tags-wrapper{
         text-align: center;
     }
+    .mdl-mini-footer--link-list, .mdl-mini-footer__link-list{
+        flex-direction: column;
+    }
+    .mdl-mini-footer--link-list, .mdl-mini-footer__link-list > li{
+        margin-bottom: 1rem;
+    }
+    footer.ul>li{
+        display: block;
+    }
 }
