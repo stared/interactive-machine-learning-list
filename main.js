@@ -18,7 +18,7 @@ const app = new Vue({
   data: {
     websites: [],
     allTags: [],
-    filter: []
+    filters: []
   },
   created: function () {
     const that = this;
@@ -43,8 +43,9 @@ const app = new Vue({
         return authors.slice(0, 3).join(", ") + "et al.";
       }
     },
-    getId: (id) => {
-      return 'id' + id;
+    addToFilters: function (tag) {
+        const that = this;
+        this.filters.push(tag);
     }
   }
 });
