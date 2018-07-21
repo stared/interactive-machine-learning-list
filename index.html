@@ -41,7 +41,8 @@
                         <div class="illustration"></div>
                     </div>
                     <div class="mdl-cell--6-col mdl-cel" style="padding: 0 2rem">
-                        <h2>A collaborative list of interactive Machine Learning, Deep Learning <br> and Stats websites </h2>
+                        <h2>A collaborative list of interactive Machine Learning, Deep Learning <br> and Stats websites
+                        </h2>
                         <template id="tag-selector">
                             <div class="tags-wrapper">
                                 <a v-for="tag in allTags"
@@ -93,8 +94,8 @@
                                                 Tags
                                             </div>
                                             <span v-for="tag in website.tags">
-                                          <a class="tag">{{ tag }}</a>
-                                        </span>
+                                                <a class="tag" @click="addToFilters(tag)">{{ tag }}</a>
+                                             </span>
                                         </div>
                                         <div>
                                             <i class="material-icons" :id="id + 'tagUses'">timeline</i>
@@ -108,7 +109,7 @@
                                     </div>
                                 </div>
 
-                                <div class="mdl-card__menu" >
+                                <div class="mdl-card__menu">
                                     <a :href="website.repo" :id="id + 'repo'" v-if="website.repo">
                                         <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
                                             <i class="material-icons">code</i>
@@ -144,10 +145,12 @@
 
                 <footer class="mdl-mini-footer">
                     <div class="mdl-mini-footer__left-section">
-                        <div class="mdl-logo"><a href="https://github.com/stared/interactive-machine-learning-list">Interactive Machine Learning List</a></div>
+                        <div class="mdl-logo"><a href="https://github.com/stared/interactive-machine-learning-list">Interactive
+                            Machine Learning List</a></div>
                         <ul class="mdl-mini-footer__link-list">
                             <li><a href="#">Want to contribute?</a></li>
-                            <li><a href="https://github.com/stared/interactive-machine-learning-list">Project on Github</a></li>
+                            <li><a href="https://github.com/stared/interactive-machine-learning-list">Project on
+                                Github</a></li>
                             <li><a href="https://github.com/fogelkuba">Front-end by Jakub Fogel</a></li>
                             <li><a href='https://pl.freepik.com/darmowe-wektory/mozg-mechaniczna_769574.htm'>Illustration
                                 Designed by Freepik
