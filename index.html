@@ -40,7 +40,7 @@
                     <div class="mdl-cell--5-col mdl-cell" style="text-align: right">
                         <div class="illustration"></div>
                     </div>
-                    <div class="mdl-cell--6-col mdl-cel">
+                    <div class="mdl-cell--6-col mdl-cel" style="padding: 0 2rem">
                         <h2>A collaborative list of interactive Machine Learning, Deep Learning and Stats websites </h2>
                         <template id="tag-selector">
                             <div class="tags-wrapper">
@@ -93,9 +93,7 @@
                                           <a class="tag">{{ tag }}</a>
                                         </span>
                                         </div>
-
                                         <div>
-
                                             <i class="material-icons" :id="id + 'tagUses'">timeline</i>
                                             <div class="mdl-tooltip" :data-mdl-for="id + 'tagUses'">
                                                 Uses
@@ -132,6 +130,7 @@
                                  v-if="website.writeup || website.desc">
                                 <span v-if="website.desc"> {{ website.desc }}</span><br>
                                 <a :href="website.writeup"
+                                   v-if="website.writeup"
                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
                                     Read More
                                 </a>

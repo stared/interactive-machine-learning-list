@@ -16,7 +16,7 @@
   authors: [Andrej Karpathy]
   tags: [convnet]
   uses: [demo, library]
-  # maybe adding "see also" with concrete examples?
+  img: https://images.unsplash.com/photo-1532109676976-49323426ef1d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ccea5896e15e3cd034cdf6baaaef7b21&auto=format&fit=crop&w=1350&q=80
 
 - name: "Support Vector Machine in JavaScript"
   url: https://cs.stanford.edu/~karpathy/svmjs/demo/
@@ -26,6 +26,8 @@
   authors: [Andrej Karpathy]
   tags: [svm]
   uses: [demo, library]
+  img: https://images.unsplash.com/photo-1532109676976-49323426ef1d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ccea5896e15e3cd034cdf6baaaef7b21&auto=format&fit=crop&w=1350&q=80
+
 
 - name: "tSNEJS demo"
   url: https://cs.stanford.edu/people/karpathy/tsnejs/
