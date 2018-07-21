@@ -1,3 +1,4 @@
+
 Vue.component('tag-selector', {
   props: ['all-tags'],
   template: document.getElementById('tag-selector'),
