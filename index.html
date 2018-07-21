@@ -81,7 +81,9 @@
                                     </h3>
                                 </div>
                                 <div class="mdl-card__supporting-text">
-                                    by {{ etAl(website.authors) }}
+                                    <span class="authors">
+                                        by {{ etAl(website.authors) }}
+                                    </span>
                                     <div class="mdl-grid" v-if="website.tags && website.uses">
 
                                         <div>
@@ -115,7 +117,7 @@
                                         Repository
                                     </div>
 
-                                    <a :href="website.ulr" :id="id + 'www'" v-if="website.ulr">
+                                    <a :href="website.ulr" :id="id + 'www'" v-if="website.url">
                                         <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
                                             <i class="material-icons">language</i>
                                         </button>

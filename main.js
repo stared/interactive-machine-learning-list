@@ -73,6 +73,10 @@ const app = new Vue({
         },
         clearAllFilters: function() {
             this.filters = [];
+        },
+        getTagCount(tag){
+            let count = 0;
+            // tag
         }
     }
 });

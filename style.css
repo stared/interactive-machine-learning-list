@@ -16,7 +16,7 @@ h2 {
 }
 
 a {
-    margin-right: .5rem;
+    /*margin-right: .5rem;*/
     cursor: pointer;
 }
 
@@ -42,15 +42,12 @@ ul > li {
 
 .mdl-cell {
     overflow-y: auto;
-    /*margin: 1rem;*/
-    /*box-sizing: border-box;*/
 }
 
 .mdl-card {
     min-height: 240px;
     margin: 0 auto;
     width: 100%;
-    /*padding: 0 1rem;*/
     position: relative;
     z-index: 2;
     background-size: cover;
@@ -67,20 +64,29 @@ ul > li {
     display: inline-block;
     font-weight: bold;
     color: white;
+    position: relative;
+    z-index: 2;
     text-shadow: 0 0 5px black;
 }
 
 .mdl-card__supporting-text {
     color: #fff;
     padding: 0 1rem;
+    position: relative;
+    z-index: 2;
 }
 
 .mdl-card__supporting-text > span {
     padding-top: .5rem;
 }
 
+.mdl-card__supporting-text > span.authors {
+    text-shadow: 0 0 5px black;
+}
+
 .mdl-card__supporting-text .tag {
     margin-bottom: .5rem;
+    margin-right: .5rem;
 }
 
 .mdl-card__supporting-text i.material-icons {
@@ -96,6 +102,7 @@ ul > li {
 .mdl-card--bottom {
     bottom: 0;
     left: 0;
+    min-height: 75px;
     padding-top: 1rem !important;
     position: absolute;
 }
@@ -106,7 +113,7 @@ ul > li {
 }
 
 .mdl-card__actions {
-    background: white;
+    background: rgba(255,255,255, 1);
     font-size: 14px;
     padding: .5rem 1rem;
 }
@@ -116,6 +123,18 @@ ul > li {
     min-height: 300px;
     background-size: cover;
     color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.background:before {
+    content: '';
+    left: 0;
+    top: 0;
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, rgba(0,0,0,.1), transparent);
 }
 
 .right {
@@ -140,10 +159,12 @@ ul > li {
 .tags-wrapper {
     margin: 2rem auto;
     max-width: 70vw;
-    /*display: block;*/
     position: relative;
     z-index: 3;
     text-align: left;
+}
+.tags-wrapper > .tag {
+    margin-bottom: .5rem;
 }
 
 .tag {
@@ -181,4 +202,31 @@ footer {
     position: relative;
     z-index: 3;
     margin-top: 3rem;
+}
+
+@media screen and (max-width: 840px){
+    .illustration{
+        height: 150px;
+        width: 100%;
+        background-position-x: center;
+    }
+}
+@media screen and (max-width: 505px){
+    .illustration{
+        height: 150px;
+        background-position-x: center;
+    }
+    .mdl-layout__header-row{
+        padding: 0 16px;
+    }
+    .mdl-layout-title{
+        text-align: left;
+    }
+    h2{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .tags-wrapper{
+        text-align: center;
+    }
 }
