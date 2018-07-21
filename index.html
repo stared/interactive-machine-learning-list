@@ -70,7 +70,7 @@
 
                 <ul class="mdl-grid">
                     <li class="mdl-cell mdl-cell--4-col"
-                        v-for="(website, id) in websites"
+                        v-for="(website, id) in filteredWebsites"
                     >
                         <div class="demo-card-wide mdl-card mdl-shadow--2dp">
                             <div class="background" :style="{backgroundImage: 'url(' + website.img + ')'}">
@@ -105,8 +105,8 @@
                                     </div>
                                 </div>
 
-                                <div class="mdl-card__menu" v-if="website.repo">
-                                    <a :href="website.repo" :id="id + 'repo'">
+                                <div class="mdl-card__menu" >
+                                    <a :href="website.repo" :id="id + 'repo'" v-if="website.repo">
                                         <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
                                             <i class="material-icons">code</i>
                                         </button>
@@ -115,7 +115,7 @@
                                         Repository
                                     </div>
 
-                                    <a :href="website.ulr" :id="id + 'www'">
+                                    <a :href="website.ulr" :id="id + 'www'" v-if="website.ulr">
                                         <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
                                             <i class="material-icons">language</i>
                                         </button>

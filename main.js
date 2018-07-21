@@ -1,60 +1,77 @@
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function () {
     /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-    particlesJS.load('particles-js', 'particlesjs-config.json', function() {
+    particlesJS.load('particles-js', 'particlesjs-config.json', function () {
         console.log('callback - particles.js config loaded');
     });
 });
 
 
-
 Vue.component('tag-selector', {
-  props: ['all-tags'],
-  template: document.getElementById('tag-selector'),
+    props: ['all-tags'],
+    template: document.getElementById('tag-selector'),
 });
 
 
 const app = new Vue({
-  el: '#app',
-  data: {
-    websites: [],
-    allTags: [],
-    filters: []
-  },
-  created: function () {
-    const that = this;
-    fetch("websites.yaml")
-      .then(response => response.text())
-      .then(text => {
-        that.websites = jsyaml.load(text);
-        that.websites.forEach((website) =>
-          website.tags.concat(website.uses).forEach((tag) => {
-            if (that.allTags.indexOf(tag) === -1) {
-              that.allTags.push(tag);
-            }
-          })
-        )
-    });
-  },
-  methods: {
-    etAl: (authors) => {
-      if (authors.length < 3) {
-        return authors.join(", ");
-      } else {
-        return authors.slice(0, 3).join(", ") + "et al.";
-      }
+    el: '#app',
+    data: {
+        websites: [],
+        allTags: [],
+        filters: []
     },
-    addToFilters: function (tag) {
-        if (this.filters.indexOf(tag) === -1) {
-            this.filters.push(tag);
+    computed: {
+        filteredWebsites: function() {
+            let websites = this.websites,
+                results = [],
+                filters = this.filters;
+
+            if (!this.filters.length) {
+                return websites;
+            } else {
+                return websites.filter(function(site) {
+                    return filters.forEach( filter => {
+                        console.log(site.tags.includes(filter));
+                        return site.tags.includes(filter) ||  site.uses.includes(filter)
+                    })
+                });
+            }
         }
     },
-    checkActive: function (tag) {
-        return this.filters.indexOf(tag)
+    created: function() {
+        const that = this;
+        fetch("websites.yaml")
+            .then(response => response.text())
+            .then(text => {
+                that.websites = jsyaml.load(text);
+                that.websites.forEach((website) =>
+                    website.tags.concat(website.uses).forEach((tag) => {
+                        if (that.allTags.indexOf(tag) === -1) {
+                            that.allTags.push(tag);
+                        }
+                    })
+                )
+            });
     },
-    clearAllFilters: function () {
-        this.filters = [];
+    methods: {
+        etAl: (authors) => {
+            if (authors.length < 3) {
+                return authors.join(", ");
+            } else {
+                return authors.slice(0, 3).join(", ") + "et al.";
+            }
+        },
+        addToFilters: function(tag) {
+            if (this.filters.indexOf(tag) === -1) {
+                this.filters.push(tag);
+            }
+        },
+        checkActive: function(tag) {
+            return this.filters.indexOf(tag)
+        },
+        clearAllFilters: function() {
+            this.filters = [];
+        }
     }
-  }
 });
 
 
