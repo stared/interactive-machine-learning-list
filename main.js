@@ -44,7 +44,9 @@ const app = new Vue({
       }
     },
     addToFilters: function (tag) {
-        this.filters.push(tag);
+        if (this.filters.indexOf(tag) === -1) {
+            this.filters.push(tag);
+        }
     },
     checkActive: function (tag) {
         return this.filters.indexOf(tag)

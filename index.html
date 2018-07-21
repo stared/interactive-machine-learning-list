@@ -5,11 +5,12 @@
     <script src="https://unpkg.com/vue"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.12.0/js-yaml.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-pink.min.css" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-pink.min.css"/>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="particles.js"></script>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
 <a href="https://github.com/stared/interactive-machine-learning-list">
@@ -35,29 +36,37 @@
         </header>
         <main class="mdl-layout__content" id="particles-js">
             <div class="page-content"><!-- Your content goes here -->
-
-                <template id="tag-selector">
-                    <div class="tags-wrapper">
-                        <a v-for="tag in allTags"
-                           class="tag"
-                            @click="addToFilters(tag)"
-                        v-bind:class="{ active: checkActive(tag) > -1 }"
-                        >
-                            {{ tag }}
-                        </a>
-                        <span v-if="filters.length">
-                            Selected {{filters.length}} filters
-                        </span>
-                        <a class="tag"
-                           v-if="filters.length"
-                           style="background: rgb(255,64,129); color: white"
-                           @click="clearAllFilters"
-                        >
-                            <i class="material-icons delete">delete</i>
-                            Clear
-                        </a>
+                <div class="mdl-grid">
+                    <div class="mdl-cell--5-col mdl-cell" style="text-align: right">
+                        <div class="illustration"></div>
                     </div>
-                </template>
+                    <div class="mdl-cell--6-col mdl-cel">
+                        <h2>A collaborative list of interactive Machine Learning, Deep Learning and Stats websites </h2>
+                        <template id="tag-selector">
+                            <div class="tags-wrapper">
+                                <a v-for="tag in allTags"
+                                   class="tag"
+                                   @click="addToFilters(tag)"
+                                   v-bind:class="{ active: checkActive(tag) > -1 }"
+                                >
+                                    {{ tag }}
+                                </a>
+                                <p v-if="filters.length">
+                                    Selected {{filters.length}} filters
+                                    <a class="tag"
+                                       v-if="filters.length"
+                                       style="background: rgb(255,64,129); color: white"
+                                       @click="clearAllFilters"
+                                    >
+                                        <i class="material-icons delete">delete</i>
+                                        Clear
+                                    </a>
+                                </p>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+
 
                 <ul class="mdl-grid">
                     <li class="mdl-cell mdl-cell--4-col"
@@ -67,25 +76,28 @@
                             <div class="mdl-card__title">
                                 <h3 class="mdl-card__title-text">
                                     {{ website.name }}
-                                    <template v-if="website.license">({{ website.license }}) </template>
-
+                                    <template v-if="website.license">({{ website.license }})</template>
                                 </h3>
                             </div>
                             <div class="mdl-card__supporting-text">
                                 by {{ etAl(website.authors) }}
                                 <div class="mdl-grid" v-if="website.tags && website.uses">
-                                    <div class="mdl-cell mdl-cell--6-col">
+                                    <!--<div class="mdl-cell mdl-cell&#45;&#45;6-col">-->
+                                    <div>
                                         <i class="material-icons">label</i>
                                         <span v-for="tag in website.tags">
                                           <a class="tag">{{ tag }}</a>
                                         </span>
                                     </div>
-                                    <div class="mdl-cell mdl-cell--6-col right">
-                                        <i class="material-icons">timeline</i>
-                                        <span v-for="use in website.uses">
+                                    <!--</div>-->
+                                    <!--<div class="mdl-cell mdl-cell&#45;&#45;6-col right">-->
+                                  <div>
+                                      <i class="material-icons">timeline</i>
+                                      <span v-for="use in website.uses">
                                             <a class="tag">{{ use }}</a>
                                         </span>
-                                    </div>
+                                  </div>
+                                    <!--</div>-->
                                 </div>
                             </div>
 
@@ -109,7 +121,8 @@
                                 </div>
                             </div>
 
-                            <div class="mdl-card__actions mdl-card--border mdl-card--bottom" v-if="website.writeup || website.desc">
+                            <div class="mdl-card__actions mdl-card--border mdl-card--bottom"
+                                 v-if="website.writeup || website.desc">
                                 <span v-if="website.desc"> {{ website.desc }}</span><br>
                                 <a :href="website.writeup"
                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
@@ -127,14 +140,16 @@
                             <li><a href="#">Help</a></li>
                             <li><a href="#">Authors</a></li>
                             <li><a href="#">Project on Github</a></li>
+                            <li><a href='https://pl.freepik.com/darmowe-wektory/mozg-mechaniczna_769574.htm'>Illustration
+                                Designed by Freepik
+                            </a></li>
+
                         </ul>
                     </div>
                 </footer>
             </div>
         </main>
     </div>
-
-
 
 
     <!--app end-->
