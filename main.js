@@ -28,12 +28,15 @@ const app = new Vue({
             if (!this.filters.length) {
                 return websites;
             } else {
-                return websites.filter(function(site) {
-                    return filters.forEach( filter => {
+                websites.filter(function(site) {
+                    filters.forEach( filter => {
                         console.log(site.tags.includes(filter));
-                        return site.tags.includes(filter) ||  site.uses.includes(filter)
+                        if  ( site.tags.includes(filter) ||  site.uses.includes(filter) ) {
+                            results.push(site);
+                        }
                     })
                 });
+                return results;
             }
         }
     },
