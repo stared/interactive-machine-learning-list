@@ -32,6 +32,9 @@ const app = new Vue({
       } else {
         return authors.slice(0, 3).join(", ") + "et al.";
       }
+    },
+    getId: (id) => {
+      return 'id' + id;
     }
   }
 });

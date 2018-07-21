@@ -1,3 +1,49 @@
+html{
+    /*font-size: 14px;*/
+}
 ul > li {
     list-style: none;
+}
+.mdl-navigation{
+    padding: 0 1rem;
+}
+.page-content > .mdl-grid{
+    padding-top: 3rem;
+}
+.mdl-cell{
+    /*margin: 1rem;*/
+    /*box-sizing: border-box;*/
+}
+.mdl-card{
+    min-height: 230px;
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    z-index: 2;
+}
+.mdl-card__title{
+    max-width: 90%;
+    padding-bottom: 0;
+}
+.mdl-card__supporting-text{
+    padding: 0 1rem;
+}
+.mdl-card__supporting-text > span{
+    padding-top: .5rem;
+}
+.mdl-card__supporting-text .tag{
+    margin-bottom: .5rem;
+}
+.mdl-card__supporting-text i.material-icons{
+   font-size: 20px;
+}
+.mdl-card__supporting-text > .mdl-grid {
+    padding: 0;
+}
+
+.mdl-card__actions{
+  padding: 0 1rem;
+}
+.right{
+    text-align: right;
 }
