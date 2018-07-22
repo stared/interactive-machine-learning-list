@@ -74,6 +74,7 @@
   authors: [Daniel Smilkov, Shan Carter]
   tags: [mlp]
   uses: [demo]
+  img: http://playground.tensorflow.org/preview.png
 
 - name: "A visual introduction to machine learning (Part 1)"
   url: http://www.r2d3.us/visual-intro-to-machine-learning-part-1/
@@ -83,6 +84,7 @@
   authors: [Stephanie Yee, Tony Chu]
   tags: [decision-tree]
   uses: [demo, tutorial]
+  img: http://www.r2d3.us/static/pages/decision-trees-part-1/preview-en.png
 
 - name: "A visual introduction to machine learning (Part 2)"
   desc: Model Tuning and the Bias-Variance Tradeoff
