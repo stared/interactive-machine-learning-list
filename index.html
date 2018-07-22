@@ -2,6 +2,10 @@
 <html>
 <head>
   <title>Interactive Machine Learning List</title>
+  <meta name="description" content="A collaborative list of interactive Machine Learning, Deep Learning and Statistics websites.">
+  <meta name="keywords" content="museum, scavenger hunt, object detection, ai">
+  <meta name="author" content="Piotr Migdał, Jakub Fogel, contributors">
+  <meta charset="utf-8">
   <script src="https://unpkg.com/vue"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.12.0/js-yaml.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -13,11 +17,6 @@
   content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
-  <a href="https://github.com/stared/interactive-machine-learning-list">
-    <img style="position: fixed; z-index: 1000 ;top: 0; right: 0; border: 0;"
-    src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"
-    alt="Fork me on GitHub">
-  </a>
   <div id="app">
     <!-- Always shows a header, even in smaller screens. -->
 
@@ -25,12 +24,12 @@
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
           <!-- Title -->
-          <span class="mdl-layout-title">Interactive Machine Learning List</span>
+          <span class="mdl-layout-title">Interactive Machine Learning, Deep Learning and Statistics websites</span>
           <!-- Add spacer, to align navigation to the right -->
           <div class="mdl-layout-spacer"></div>
           <!-- Navigation. We hide it in small screens. -->
           <nav class="mdl-navigation mdl-layout--large-screen-only">
-            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="https://github.com/stared/interactive-machine-learning-list/">GitHub repo</a>
           </nav>
         </div>
       </header>
@@ -41,8 +40,9 @@
               <div class="illustration"></div>
             </div>
             <div class="mdl-cell--6-col mdl-cel" style="padding: 0 2rem">
-              <h2>A collaborative list of interactive Machine Learning, Deep Learning <br> and Stats websites
-              </h2>
+              <h4>Open source: see its <a href="https://github.com/stared/interactive-machine-learning-list/">GitHub repository</a></h4>
+              <h4>It's collaborative: add visualizations via <a href="https://github.com/stared/interactive-machine-learning-list/pulls">pull requests</a></h3>
+              <h4>If you want to create such visualizations, sign up for <a href="http://eepurl.com/dBJCfP">In Browser AI</a>!</h4>
               <template id="tag-selector">
                 <div class="tags-wrapper">
                   <a v-for="tag in allTags"
@@ -144,18 +144,15 @@
 
 <footer class="mdl-mini-footer">
   <div class="mdl-mini-footer__left-section">
-    <div class="mdl-logo"><a href="https://github.com/stared/interactive-machine-learning-list">Interactive
-    Machine Learning List</a></div>
     <ul class="mdl-mini-footer__link-list">
-      <li><a href="#">Want to contribute?</a></li>
-      <li><a href="https://github.com/stared/interactive-machine-learning-list">Project on
-      Github</a></li>
-      <li><a href="https://github.com/fogelkuba">Front-end by Jakub Fogel</a></li>
-      <li><a href='https://pl.freepik.com/darmowe-wektory/mozg-mechaniczna_769574.htm'>Illustration
-        Designed by Freepik
+      <li><a href="https://github.com/stared/interactive-machine-learning-list">open source (contribute!)</a></li>
+      <li>idea by <a href="https://p.migdal.pl">Piotr Migdał</a></li>
+      <li>front-end by <a href="https://github.com/fogelkuba">Jakub Fogel</a></li>
+      <li>brain graphics by <a href='https://pl.freepik.com/darmowe-wektory/mozg-mechaniczna_769574.htm'>Freepik
       </a></li>
-
+      <li>contributions by <a href="https://github.com/stared/interactive-machine-learning-list/graphs/contributors">many</a></li>
     </ul>
+    <p>...aaand if you want to create such visualizations by yourself, see <a href="http://eepurl.com/dBJCfP">In Browser AI</a></p>
   </div>
 </footer>
 </div>
