@@ -62,13 +62,16 @@ const app = new Vue({
                 return authors.slice(0, 3).join(", ") + "et al.";
             }
         },
-        addToFilters: function(tag) {
+        addRemoveToFilters: function(tag) {
             if (this.filters.indexOf(tag) === -1) {
                 this.filters.push(tag);
+            } else {
+              this.filters = this.filters
+                .filter((x) => x !== tag);
             }
         },
         checkActive: function(tag) {
-            return this.filters.indexOf(tag)
+            return this.filters.indexOf(tag) > -1;
         },
         clearAllFilters: function() {
             this.filters = [];

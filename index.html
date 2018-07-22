@@ -47,8 +47,8 @@
                             <div class="tags-wrapper">
                                 <a v-for="tag in allTags"
                                    class="tag"
-                                   @click="addToFilters(tag)"
-                                   v-bind:class="{ active: checkActive(tag) > -1 }"
+                                   @click="addRemoveToFilters(tag)"
+                                   v-bind:class="{ active: checkActive(tag) }"
                                 >
                                     {{ tag }}
                                     <!--{{getTagCount(tag)}}-->
@@ -92,7 +92,7 @@
                                                 Tags
                                             </div>
                                             <span v-for="tag in website.tags">
-                                                <a class="tag" @click="addToFilters(tag)">{{ tag }}</a>
+                                                <a class="tag" @click="addRemoveToFilters(tag)" v-bind:class="{ active: checkActive(tag) }">{{ tag }}</a>
                                              </span>
                                         </div>
                                         <div>
@@ -101,7 +101,7 @@
                                                 Uses
                                             </div>
                                             <span v-for="use in website.uses">
-                                            <a class="tag">{{ use }}</a>
+                                            <a class="tag" @click="addRemoveToFilters(use)" v-bind:class="{ active: checkActive(use) }">{{ use }}</a>
                                         </span>
                                         </div>
                                     </div>
