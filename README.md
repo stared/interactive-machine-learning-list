@@ -44,4 +44,4 @@ Inspirations for collecting and displaying content:
 
 ## Design
 
-Main layout and styling ub by [Jakub Fogel](https://github.com/fogelkuba)
+Main layout and styling developed by [Jakub Fogel](https://github.com/fogelkuba)
