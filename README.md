@@ -40,3 +40,8 @@ Inspirations for collecting and displaying content:
   * source: [EliotAndres/kaggle-past-solutions](https://github.com/EliotAndres/kaggle-past-solutions)
 * [D3 Discovery](https://d3-discovery.net/) - finding D3 plugins with ease
   * source: [https://github.com/wbkd/d3-discovery](https://github.com/wbkd/d3-discovery)
+
+
+## Design
+
+Main layout and styling developed by [Jakub Fogel](https://github.com/fogelkuba)
