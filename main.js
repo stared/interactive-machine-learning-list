@@ -59,7 +59,7 @@ const app = new Vue({
       if (authors.length < 3) {
         return authors.join(", ");
       } else {
-        return authors.slice(0, 3).join(", ") + "et al.";
+        return authors.slice(0, 3).join(", ") + " et al.";
       }
     },
     addRemoveToFilters: function(tag) {
