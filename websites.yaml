@@ -6,17 +6,17 @@
   authors: [Andrej Karpathy]
   tags: [rnn, lstm, nlp]
   uses: [demo, library]
-  img: https://images.unsplash.com/photo-1532109676976-49323426ef1d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ccea5896e15e3cd034cdf6baaaef7b21&auto=format&fit=crop&w=1350&q=80
+  img: https://cs.stanford.edu/people/karpathy/recurrentjs/eg.png
 
 - name: "ConvNetJS"
-  url: https://cs.stanford.edu/people/karpathy/recurrentjs/
+  url: https://cs.stanford.edu/people/karpathy/convnetjs/
   repo: https://github.com/karpathy/convnetjs
   license: MIT
   writeup: ""
   authors: [Andrej Karpathy]
   tags: [convnet]
   uses: [demo, library]
-  img: https://images.unsplash.com/photo-1532109676976-49323426ef1d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ccea5896e15e3cd034cdf6baaaef7b21&auto=format&fit=crop&w=1350&q=80
+  img: https://cs.stanford.edu/people/karpathy/convnetjs/cifar10.jpeg
 
 - name: "Support Vector Machine in JavaScript"
   url: https://cs.stanford.edu/~karpathy/svmjs/demo/
@@ -26,8 +26,7 @@
   authors: [Andrej Karpathy]
   tags: [svm]
   uses: [demo, library]
-  img: https://images.unsplash.com/photo-1532109676976-49323426ef1d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ccea5896e15e3cd034cdf6baaaef7b21&auto=format&fit=crop&w=1350&q=80
-
+  img: ""
 
 - name: "tSNEJS demo"
   url: https://cs.stanford.edu/people/karpathy/tsnejs/
@@ -58,13 +57,14 @@
   uses: [demo, library]
 
 - name: "Interactive visualization of word analogies in GloVe"
-  url: https://cs.stanford.edu/people/karpathy/recurrentjs/
+  url: https://lamyiowce.github.io/word2viz/
   repo: https://github.com/lamyiowce/word2viz
   license: MIT
   writeup: http://p.migdal.pl/2017/01/06/king-man-woman-queen-why.html
   authors: [Julia Bazińska, Piotr Migdał]
   tags: [nlp, word2vec]
   uses: [demo]
+  img: https://lamyiowce.github.io/word2viz/word2viz_screenshot.png
 
 - name: "A Neural Network Playground"
   url: http://playground.tensorflow.org/

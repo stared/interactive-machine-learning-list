@@ -85,6 +85,7 @@
               <span class="authors">
                 by {{ etAl(website.authors) }}
               </span>
+              <span v-if="website.license">({{ website.license }})</span>
               <div class="mdl-grid" v-if="website.tags && website.uses">
                 <div>
                   <i class="material-icons" :id="id + 'tagIcon'">label</i>
@@ -105,7 +106,6 @@
                   </span>
                 </div>
               </div>
-              <template v-if="website.license">({{ website.license }})</template>
             </div>
 
             <div class="mdl-card__menu">
