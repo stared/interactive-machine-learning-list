@@ -1,11 +1,17 @@
 # interactive-machine-learning-list
 
-A collaborative list of interactive Machine Learning, Deep Learning and Statistics websites. (Started by [Piotr Migdał](https://p.migdal.pl/), but anyone is encouraged to contribute!)
+A collaborative list of interactive Machine Learning, Deep Learning and Statistics websites.
+Started by [Piotr Migdał](https://p.migdal.pl/), but anyone is encouraged to contribute!
+It is a simple no-build Vue.js website:
 
-Check [websites.yaml](https://github.com/stared/interactive-machine-learning-list/blob/master/websites.yaml).
-I am developing a simple no-build Vue.js website. Right now is in primordial stage (Web 1.0!) and contributions will be appreciated. [Here it is.](http://p.migdal.pl/interactive-machine-learning-list/)
+* [/p.migdal.pl/interactive-machine-learning-list/](https://p.migdal.pl/interactive-machine-learning-list/)
 
-Feel invited to Pull Request other interactive visualizations! :)
+Right now is in primordial stage (Web 1.0!) and contributions will be appreciated. [Here it is.](http://p.migdal.pl/interactive-machine-learning-list/)
+Still work in progress.
+
+Feel invited to Pull Request other interactive visualizations (check [websites.yaml](https://github.com/stared/interactive-machine-learning-list/blob/master/websites.yaml))! :)
+
+...aaand if you want to create such visualizations by yourself, see [In Browser AI](http://eepurl.com/dBJCfP).
 
 ## What goes there?
 
@@ -18,12 +24,6 @@ For things using backend (when you can see solution, but it uses some PyTorch/TF
 * add `backend-dependent` in `uses`
 
 Strong preference for open-source solutions (so people can reuse it and learn from code), though it is not a requirement. Though, mention repo and open source license only when it is directly relevant (vs additional materials such as exercises for a book, or Python algorithm).
-
-## Website
-
-Q: I saw its current website looks bare.  Can I help?
-
-A: Yes! (Myself I am not a frontend developer. I play with it for fun, but collaboration is welcomed!)
 
 ## Other lists
 
