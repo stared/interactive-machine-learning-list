@@ -104,6 +104,15 @@
                     <a class="tag" @click="addRemoveToFilters(use)" v-bind:class="{ active: checkActive(use) }">{{ use }}</a>
                   </span>
                 </div>
+                <div>
+                  <i class="material-icons" :id="id + 'description'">timeline</i>
+                  <div class="mdl-tooltip" :data-mdl-for="id + 'description'">
+                    License
+                  </div>
+                  <span>
+                    <a class="tag" @click="addRemoveToFilters(website.license)" v-bind:class="{ active: checkActive(website.license) }">{{ website.license }}</a>
+                  </span>
+                </div>
               </div>
               <template v-if="website.license">({{ website.license }})</template>
             </div>
