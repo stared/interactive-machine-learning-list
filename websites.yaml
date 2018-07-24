@@ -162,6 +162,7 @@
   authors: [Christopher Hesse]
   tags: [gan, deep-learning]
   uses: [demo, backend-dependent]
+  img: https://raw.githubusercontent.com/affinelayer/pix2pix-tensorflow/master/docs/examples.jpg
 
 - name: "compromise"
   desc: "modest natural-language processing in javascript"
@@ -172,6 +173,7 @@
   authors: [Spencer Kelly]
   tags: [nlp]
   uses: [demo, library]
+  img: imgs/compromise.png
 
 - name: "NeuroJS"
   desc: "A javascript deep learning and reinforcement learning library"
@@ -182,6 +184,7 @@
   authors: [Jan Hünermann]
   tags: [deep-learning, reinforcement-learning]
   uses: [demo, library]
+  img: https://raw.githubusercontent.com/janhuenermann/neurojs/experimental/images/logo-with-demo.png
 
 - name: "DeepForge"
   desc: "A modern development environment for deep learning"
@@ -192,6 +195,7 @@
   authors: [Brian Broll]
   tags: [deep-learning]
   uses: [demo, library]
+  img: https://raw.githubusercontent.com/deepforge-dev/deepforge/master/images/overview.png
 
 - name: "synaptic"
   desc: "The javascript architecture-free neural network library for node.js and the browser"
@@ -218,10 +222,11 @@
   url: http://otoro.net/slimevolley/
   repo: https://github.com/hardmaru/neuralslimevolley
   license: GPL
-  writeup: ""
+  writeup: http://blog.otoro.net/2015/03/28/neural-slime-volleyball/
   authors: [hardmaru]
   tags: [deep-learning]
   uses: [demo]
+  img: imgs/slimevolley.png
 
 - name: "Can a neural network learn to recognize doodling?"
   desc: "HTML5-JS Slime Volleyball clone created using ConvNetJS."
@@ -231,8 +236,8 @@
   writeup: https://ai.googleblog.com/2017/04/teaching-machines-to-draw.html
   authors: [hardmaru]
   tags: [deep-learning]
-  uses: [game]
-  # not sure if to include this one
+  uses: [game, backend-dependent]
+  img: https://1.bp.blogspot.com/-X0o-v6SQXtI/WO6R8X22wlI/AAAAAAAABts/Qbvu5QoVwZIfKB-zEV7Po_Juh9AqEb28gCLcB/s1600/twitter_cover.png
 
 - name: "SegNet"
   desc: "A Deep Convolutional Encoder-Decoder Architecture for Robust Semantic Pixel-Wise Labelling"
@@ -323,6 +328,7 @@
   authors: [Rasmus Bååth]
   tags: [bayesian, mcmc, statistics]
   uses: [demo, library]
+  img: https://raw.githubusercontent.com/rasmusab/bayes.js/master/media/normal_model_plotly.png
 
 - name: Basic Neural Network Math
   desc: "A Visual And Interactive Look at Basic Neural Network Math"
@@ -333,6 +339,7 @@
   authors: [Jay Alammar]
   tags: [neural-networks]
   uses: [tutorial]
+  img: https://jalammar.github.io/images/two-input-one-output-sigmoid-network.png
 
 - name: Seedbank
   desc: "Collection of Interactive Machine Learning Examples"
@@ -343,6 +350,7 @@
   authors: [Mike Tyka, Sures Kumar Thoddu Srinivasan, Chris Boudreaux, Simon Doury, Harini Krishnamurthy, Mike Dory, Gabriel Schubiner, Kyle Pedersen, Artists & Machine Intelligence, Colaboratory teams]
   tags: [neural-networks, deep-learning]
   uses: [collection, backend-dependent]
+  img: https://tools.google.com/seedbank/static/images/quick-start.gif
 
 - name: "The Beginner's Guide to Dimensionality Reduction"
   desc: "Explore the methods that data scientists use to visualize high-dimensional data."
@@ -353,3 +361,4 @@
   authors: [Matthew Conlen, Fred Hohman]
   tags: [pca, tsne]
   uses: [tutorial]
+  img: https://idyll.pub/post/dimensionality-reduction-293e465c2a3443e8941b016d/static/images/share.png
