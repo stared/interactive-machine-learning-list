@@ -120,15 +120,6 @@
   uses: [book]
   img: imgs/immersivemath.png
 
-- name: "Neural Networks and Deep Learning"
-  url: http://neuralnetworksanddeeplearning.com/
-  repo: ""
-  license: CC BY NC
-  writeup: ""
-  authors: [Michael Nielsen]
-  tags: [deep-learning]
-  uses: [book]
-
 - name: "Seeing Theory"
   desc: "A visual introduction to probability and statistics"
   url: http://students.brown.edu/seeing-theory/
@@ -170,7 +161,7 @@
   writeup: ""
   authors: [Christopher Hesse]
   tags: [gan, deep-learning]
-  uses: [demo, tutorial]
+  uses: [demo, backend-dependent]
 
 - name: "compromise"
   desc: "modest natural-language processing in javascript"
