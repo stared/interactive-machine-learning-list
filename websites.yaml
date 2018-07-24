@@ -25,8 +25,8 @@
   writeup: ""
   authors: [Andrej Karpathy]
   tags: [svm]
-  uses: [demo, library]
-  img: ""
+  uses: [demo, library, npm]
+  img: imgs/svmjs.png
 
 - name: "tSNEJS demo"
   url: https://cs.stanford.edu/people/karpathy/tsnejs/
@@ -36,6 +36,7 @@
   authors: [Andrej Karpathy]
   tags: [tsne]
   uses: [demo, library]
+  img: https://karpathy.github.io/assets/tsne_preview.jpeg
 
 - name: "Random Forest demo in JavaScript"
   desc: "Random Forest implementation for JavaScript. Supports arbitrary weak learners."
@@ -46,6 +47,7 @@
   authors: [Andrej Karpathy]
   tags: [tsne]
   uses: [demo, library]
+  img: imgs/forestjs.png
 
 - name: "Keras.js"
   url: https://transcranial.github.io/keras-js/#/
@@ -55,6 +57,7 @@
   authors: [Leon Chen]
   tags: [convnet, rnn]
   uses: [demo, library]
+  img: https://transcranial.github.io/keras-js/demos/assets/resnet50.png
 
 - name: "Interactive visualization of word analogies in GloVe"
   url: https://lamyiowce.github.io/word2viz/
@@ -95,6 +98,7 @@
   authors: [Stephanie Yee, Tony Chu]
   tags: [decision-tree, overfitting]
   uses: [demo, tutorial]
+  img: http://www.r2d3.us/static/pages/decision-trees-part2-v2/part2-preview-en.png
 
 - name: "D3 Graph Theory"
   url: https://mrpandey.github.io/d3graphTheory/index.html
@@ -104,15 +108,17 @@
   authors: [Avinash Pandey]
   tags: [graph]
   uses: [demo, tutorial]
+  img: https://i.imgur.com/MAvlQgj.png
 
 - name: "immersive linear algebra"
   url: http://immersivemath.com/ila/index.html
-  repo: https://github.com/mrpandey/d3graphTheory
+  repo: ""
   license: ""
   writeup: ""
   authors: [J. Ström, K. Åström, and T. Akenine-Mölle]
   tags: [math, linear-algebra]
   uses: [book]
+  img: imgs/immersivemath.png
 
 - name: "Neural Networks and Deep Learning"
   url: http://neuralnetworksanddeeplearning.com/
@@ -132,6 +138,7 @@
   authors: [Daniel Kunin, Jingru Guo, Tyler Dae Devlin, Daniel Xiang]
   tags: [statistics]
   uses: [tutorial]
+  img: https://students.brown.edu/seeing-theory/img/share/home.png
 
 - name: "tSNE for the Web"
   desc: "TensorFlow.js Powered tSNE Implementation"
@@ -142,6 +149,7 @@
   authors: [Nicola Pezzotti, Alexander Mordvintsev, Thomas Hollt, Boudewijn P. F. Lelieveldt, Elmar Eisemann, Anna Vilanova]
   tags: [tsne]
   uses: [demo, tensorflow.js, npm]
+  img: https://3.bp.blogspot.com/-NE01azL_JxU/Wxli17oYNzI/AAAAAAAACxQ/axOI2yy-Ft0QbqaekOyemm5Xn0wAFvRUwCLcBGAs/s1600/image2.gif
 
 - name: "GRAIL Text Recognizer"
   desc: "An active essay revisiting Gabriel Groner's GRAIL handwriting recognizer from the 1960s"
@@ -152,6 +160,7 @@
   authors: [Jack Schaedler]
   tags: [handwriting]
   uses: [demo, tutorial]
+  img: imgs/handwriting-recognition.png
 
 - name: "pix2pix: Image-to-Image Demo"
   desc: "Tensorflow port of Image-to-Image Translation with Conditional Adversarial Nets"
@@ -353,4 +362,3 @@
   authors: [Matthew Conlen, Fred Hohman]
   tags: [pca, tsne]
   uses: [tutorial]
-
