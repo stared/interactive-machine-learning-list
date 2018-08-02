@@ -86,7 +86,6 @@
               <span class="authors">
                 by {{ etAl(website.authors) }}
               </span>
-              <span v-if="website.license">({{ website.license }})</span>
               <div class="mdl-grid" v-if="website.tags && website.uses">
                 <div>
                   <i class="material-icons" :id="id + 'tagIcon'">label</i>
@@ -104,6 +103,15 @@
                   </div>
                   <span v-for="use in website.uses">
                     <a class="tag" @click="addRemoveToFilters(use)" v-bind:class="{ active: checkActive(use) }">{{ use }}</a>
+                  </span>
+                </div>
+                <div>
+                  <i class="material-icons" :id="id + 'tagLicense'">copyright</i>
+                  <div class="mdl-tooltip" :data-mdl-for="id + 'tagLicense'">
+                    License
+                  </div>
+                  <span v-if="website.license">
+                    <a class="tag" @click="addRemoveToFilters(website.license)" v-bind:class="{ active: checkActive(website.license) }">{{ website.license }}</a>
                   </span>
                 </div>
               </div>

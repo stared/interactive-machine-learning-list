@@ -51,7 +51,6 @@ Main layout and styling developed by [Jakub Fogel](https://github.com/fogelkuba)
 
 * Descriptions of sites
 * Better writeup link
-* Tags semantically
 * Write-up in a different way
 * Tag counts
 * Intersection, not sum, of tags

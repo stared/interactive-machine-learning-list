@@ -29,8 +29,8 @@ const app = new Vue({
         return websites;
       } else {
         websites.filter(function(site) {
-          filters.forEach( filter => {
-            if  ( site.tags.includes(filter) ||  site.uses.includes(filter) ) {
+          filters.forEach((filter) => {
+            if  (site.tags.includes(filter) ||  site.uses.includes(filter) || site.license === filter) {
               results.push(site);
             }
           })
@@ -45,13 +45,17 @@ const app = new Vue({
     .then(response => response.text())
     .then(text => {
       that.websites = jsyaml.load(text);
-      that.websites.forEach((website) =>
+      that.websites.forEach((website) => {
         website.tags.concat(website.uses).forEach((tag) => {
           if (that.allTags.indexOf(tag) === -1) {
             that.allTags.push(tag);
           }
-        })
-        )
+        });
+
+        if (!!website.license & that.allTags.indexOf(website.license) === -1) {
+          that.allTags.push(website.license);
+        }
+      })
     });
   },
   methods: {
@@ -85,5 +89,3 @@ const app = new Vue({
           }
         }
       });
-
-
