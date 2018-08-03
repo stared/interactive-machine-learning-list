@@ -362,3 +362,15 @@
   tags: [pca, tsne]
   uses: [tutorial]
   img: https://idyll.pub/post/dimensionality-reduction-293e465c2a3443e8941b016d/static/images/share.png
+
+- name: "Visualizing K-Means Clustering"
+  desc: "The k-means algorithm captures the insight that each point in a cluster should be near to the center of that cluster."
+  url: https://www.naftaliharris.com/blog/visualizing-k-means-clustering/
+  repo: ""
+  license: ""
+  writeup: ""
+  authors: [Naftali Harris]
+  tags: [kmeans]
+  uses: [tutorial]
+  img: https://idyll.pub/post/dimensionality-reduction-293e465c2a3443e8941b016d/static/images/share.png
+  date: "2014-01-19"
