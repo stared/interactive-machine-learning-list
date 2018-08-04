@@ -21,22 +21,12 @@ const app = new Vue({
   },
   computed: {
     filteredWebsites: function() {
-      let websites = this.websites,
-      results = [],
-      filters = this.filters;
+      return this.websites.filter((website) =>
+        this.filters.every((tag) =>
+          website.tags.includes(tag) || website.uses.includes(tag) || website.license === tag
+        )
+      );
 
-      if (!this.filters.length) {
-        return websites;
-      } else {
-        websites.filter(function(site) {
-          filters.forEach((filter) => {
-            if  (site.tags.includes(filter) ||  site.uses.includes(filter) || site.license === filter) {
-              results.push(site);
-            }
-          })
-        });
-        return results;
-      }
     }
   },
   created: function() {
