@@ -1,4 +1,5 @@
 - name: "Deep Recurrent Nets character generation demo"
+  desc: "This demo shows usage of the recurrentjs library train RNN and LSTM networks in JavaScript."
   url: https://cs.stanford.edu/people/karpathy/recurrentjs/
   repo: https://github.com/karpathy/recurrentjs
   license: MIT
@@ -9,6 +10,7 @@
   img: https://cs.stanford.edu/people/karpathy/recurrentjs/eg.png
 
 - name: "ConvNetJS"
+  desc: "Various demos of deep learning in JavaScript, using ConvNetJS library."
   url: https://cs.stanford.edu/people/karpathy/convnetjs/
   repo: https://github.com/karpathy/convnetjs
   license: MIT
@@ -19,6 +21,7 @@
   img: https://cs.stanford.edu/people/karpathy/convnetjs/cifar10.jpeg
 
 - name: "Support Vector Machine in JavaScript"
+  desc: "A lightweight implementation of the sequential minimal optimization algorithm to train a binary SVM model in JavaScript."
   url: https://cs.stanford.edu/~karpathy/svmjs/demo/
   repo: https://github.com/karpathy/svmjs
   license: MIT
@@ -29,6 +32,7 @@
   img: imgs/svmjs.png
 
 - name: "tSNEJS demo"
+  desc: "tSNE used for clustering the 500 most-followed accounts on Twitter."
   url: https://cs.stanford.edu/people/karpathy/tsnejs/
   repo: https://github.com/karpathy/tsnejs
   license: MIT
@@ -50,6 +54,7 @@
   img: imgs/forestjs.png
 
 - name: "Keras.js"
+  desc: "Keras.js is a library enabling running Keras models in the browser, with GPU support provided by WebGL 2."
   url: https://transcranial.github.io/keras-js/#/
   repo: https://github.com/transcranial/keras-js
   license: MIT
@@ -60,6 +65,7 @@
   img: https://transcranial.github.io/keras-js/demos/assets/resnet50.png
 
 - name: "Interactive visualization of word analogies in GloVe"
+  desc: "king - man + woman is queen; but why? Explore word vectors interactively."
   url: https://lamyiowce.github.io/word2viz/
   repo: https://github.com/lamyiowce/word2viz
   license: MIT
@@ -70,6 +76,7 @@
   img: https://lamyiowce.github.io/word2viz/word2viz_screenshot.png
 
 - name: "A Neural Network Playground"
+  desc: "Interactive visualization of simple neural networks, written in typescript using d3.js."
   url: http://playground.tensorflow.org/
   repo: https://github.com/tensorflow/playground
   license: Apache
@@ -81,6 +88,7 @@
 
 - name: "A visual introduction to machine learning (Part 1)"
   url: http://www.r2d3.us/visual-intro-to-machine-learning-part-1/
+  desc: "A demo of using a decision tree algorithm to distinguish houses in New York from houses in San Francisco"
   repo: ""
   license: ""
   writeup: ""
@@ -101,6 +109,7 @@
   img: http://www.r2d3.us/static/pages/decision-trees-part2-v2/part2-preview-en.png
 
 - name: "D3 Graph Theory"
+  desc: "Learn graph theory using interactive visualizations made in D3.js."
   url: https://mrpandey.github.io/d3graphTheory/index.html
   repo: https://github.com/mrpandey/d3graphTheory
   license: GPL
@@ -110,7 +119,8 @@
   uses: [demo, tutorial]
   img: https://i.imgur.com/MAvlQgj.png
 
-- name: "immersive linear algebra"
+- name: "Immersive linear algebra"
+  desc: "The world's first linear algebra book with fully interactive figures."
   url: http://immersivemath.com/ila/index.html
   repo: ""
   license: ""
@@ -164,8 +174,8 @@
   uses: [demo, backend-dependent]
   img: https://raw.githubusercontent.com/affinelayer/pix2pix-tensorflow/master/docs/examples.jpg
 
-- name: "compromise"
-  desc: "modest natural-language processing in javascript"
+- name: "nlp-compromise"
+  desc: "modest natural-language processing in JavaScript"
   url: http://compromise.cool/
   repo: https://github.com/spencermountain/compromise
   license: MIT
@@ -176,7 +186,7 @@
   img: imgs/compromise.png
 
 - name: "NeuroJS"
-  desc: "A javascript deep learning and reinforcement learning library"
+  desc: "A JavaScript deep learning and reinforcement learning library"
   url: https://janhuenermann.com/projects/learning-to-drive
   repo: https://github.com/janhuenermann/neurojs
   license: MIT
@@ -229,7 +239,7 @@
   img: imgs/slimevolley.png
 
 - name: "Can a neural network learn to recognize doodling?"
-  desc: "HTML5-JS Slime Volleyball clone created using ConvNetJS."
+  desc: ""
   url: https://quickdraw.withgoogle.com/
   repo: ""
   license: ""
@@ -260,7 +270,7 @@
   uses: [demo, backend-dependent]
 
 - name: "LSTM Music Maker"
-  desc: "How evlolved LSTMS improvise on a melody you specify?"
+  desc: "How evlolved LSTMs improvise on a melody you specify?"
   url: https://www.sentient.ai/sentient-labs/ea/lstm-music/
   repo: ""
   license: ""
