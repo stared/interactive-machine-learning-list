@@ -142,9 +142,8 @@
           v-if="website.writeup || website.desc">
           <span v-if="website.desc"> {{ website.desc }}</span><br>
           <a :href="website.writeup"
-          v-if="website.writeup"
-          class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-          Read More
+          v-if="website.writeup">
+          see also this article
         </a>
       </div>
     </div>
