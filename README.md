@@ -4,7 +4,7 @@ A collaborative list of interactive Machine Learning, Deep Learning and Statisti
 Started by [Piotr Migdał](https://p.migdal.pl/), but anyone is encouraged to contribute!
 It is a simple no-build Vue.js website:
 
-* [/p.migdal.pl/interactive-machine-learning-list/](https://p.migdal.pl/interactive-machine-learning-list/)
+* [p.migdal.pl/interactive-machine-learning-list/](https://p.migdal.pl/interactive-machine-learning-list/)
 
 Feel invited to Pull Request other interactive visualizations (check [websites.yaml](https://github.com/stared/interactive-machine-learning-list/blob/master/websites.yaml))! :)
 
