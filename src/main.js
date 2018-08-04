@@ -23,7 +23,7 @@ const app = new Vue({
     filteredWebsites: function() {
       return this.websites.filter((website) =>
         this.filters.every((tag) =>
-          website.tags.includes(tag) || website.uses.includes(tag) || website.license === tag
+          website.allTags.includes(tag)
         )
       );
 
@@ -36,15 +36,17 @@ const app = new Vue({
     .then(text => {
       that.websites = jsyaml.load(text);
       that.websites.forEach((website) => {
-        website.tags.concat(website.uses).forEach((tag) => {
+        website.allTags = website.tags.concat(website.uses);
+        if (!!website.license) {
+          website.allTags.push(website.license);
+        }
+      });
+      that.websites.forEach((website) => {
+        website.allTags.forEach((tag) => {
           if (that.allTags.indexOf(tag) === -1) {
             that.allTags.push(tag);
           }
         });
-
-        if (!!website.license & that.allTags.indexOf(website.license) === -1) {
-          that.allTags.push(website.license);
-        }
       })
     });
   },
@@ -70,8 +72,9 @@ const app = new Vue({
     clearAllFilters: function() {
       this.filters = [];
     },
-    getTagCount(tag){
-            // let count = 0;
+    getTagCount: function(tag){
+      this.filteredWebsites
+            //let count = 0;
             // this.filteredWebsites.forEach(item => {
             //     (item.tag == tag || item.uses == tag)  ? count++ : '';
             // });
