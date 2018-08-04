@@ -51,8 +51,7 @@
                   @click="addRemoveToFilters(tag)"
                   v-bind:class="{ active: checkActive(tag) }"
                   >
-                  {{ tag }}
-                  <!--{{getTagCount(tag)}}-->
+                  {{getTagCount(tag)}}×{{ tag }}
                 </a>
                 <p v-if="filters.length">
                   Selected {{filters.length}} filters

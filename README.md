@@ -50,10 +50,7 @@ Main layout and styling developed by [Jakub Fogel](https://github.com/fogelkuba)
 (You are invited to constribute)
 
 * Descriptions of sites
-* Better writeup link
 * Write-up in a different way
-* Tag counts
-* Intersection, not sum, of tags
 * Some sorting (alphabetical?)
 * Share button
 * Code refactoring :)

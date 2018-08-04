@@ -47,7 +47,10 @@ const app = new Vue({
             that.allTags.push(tag);
           }
         });
-      })
+      });
+      that.allTags.sort((a, b) =>
+        a.toLowerCase() < b.toLowerCase() ? -1 : 1
+      );
     });
   },
   methods: {
@@ -72,13 +75,11 @@ const app = new Vue({
     clearAllFilters: function() {
       this.filters = [];
     },
-    getTagCount: function(tag){
-      this.filteredWebsites
-            //let count = 0;
-            // this.filteredWebsites.forEach(item => {
-            //     (item.tag == tag || item.uses == tag)  ? count++ : '';
-            // });
-            // return count;
-          }
-        }
-      });
+    getTagCount: function(tag) {
+      return this.filteredWebsites
+        .filter((website) => website.allTags.includes(tag))
+        .length;
+
+    }
+  }
+});
