@@ -175,7 +175,7 @@
   img: https://raw.githubusercontent.com/affinelayer/pix2pix-tensorflow/master/docs/examples.jpg
 
 - name: "nlp-compromise"
-  desc: "modest natural-language processing in JavaScript"
+  desc: "Modest natural-language processing in JavaScript"
   url: http://compromise.cool/
   repo: https://github.com/spencermountain/compromise
   license: MIT
@@ -216,6 +216,7 @@
   authors: [Brian Broll]
   tags: [deep-learning]
   uses: [demo, library]
+  img: imgs/synaptic.png
 
 - name: "Machine learning library for Node.js"
   desc: "Logistic regression, SVM linear and radial, kNN"
@@ -238,8 +239,8 @@
   uses: [demo]
   img: imgs/slimevolley.png
 
-- name: "Can a neural network learn to recognize doodling?"
-  desc: ""
+- name: "Quick, draw!"
+  desc: "Can a neural network learn to recognize your doodling? The game uses the world’s largest doodling dataset."
   url: https://quickdraw.withgoogle.com/
   repo: ""
   license: ""
@@ -258,6 +259,7 @@
   authors: [Alex Kendall, Vijay Badrinarayanan, Roberto Cipolla]
   tags: [deep-learning, cnn, segmentation]
   uses: [demo, backend-dependent]
+  img: imgs/segnet.png
 
 - name: "Caffe Demos"
   desc: "Web image classification demo"
@@ -268,6 +270,7 @@
   authors: [Yangqing Jia]
   tags: [deep-learning, cnn, classification, image-classification]
   uses: [demo, backend-dependent]
+  img: imgs/caffe-demos.png
 
 - name: "LSTM Music Maker"
   desc: "How evlolved LSTMs improvise on a melody you specify?"
@@ -278,6 +281,7 @@
   authors: [Aditya Rawal, Risto Miikkulainen]
   tags: [deep-learning, lstm, music]
   uses: [demo]
+  img: imgs/lstm-music-maker.png
 
 - name: "OMNI Draw"
   desc: "How do the learned models perceive the characters you draw?"
@@ -288,6 +292,7 @@
   authors: [Jason Liang, Elliot Meyerson, Risto Miikkulainen]
   tags: [deep-learning, cmtr, omniglot]
   uses: [demo]
+  img: imgs/omni-draw.png
 
 - name: "Celeb Match"
   desc: "Which celebrity faces match best the attribute values you specify?"
@@ -298,6 +303,7 @@
   authors: [Elliot Meyerson, Risto Miikkulainen]
   tags: [deep-learning, pta]
   uses: [demo]
+  img: imgs/celeb-match.png
 
 - name: "Neural Titanic"
   desc: "This visualization uses TensorFlow.js to train a neural network on the titanic dataset"
@@ -308,6 +314,7 @@
   authors: [Andrew Ribeiro]
   tags: [mlp, titanic]
   uses: [demo, tensorflowjs]
+  img: imgs/neural-titanic.png
 
 - name: "Backpropagation algorithm"
   desc: "The backpropagation algorithm is essential for training large neural networks quickly. This article explains how the algorithm works."
@@ -318,6 +325,7 @@
   authors: [Daniel Smilkov]
   tags: [neural-networks, math]
   uses: [tutorial]
+  img: imgs/backpropagation-algorithm.png
 
 - name: "Visual Search"
   desc: "This website uses deep neural networks to compute a fingerprint of a query image and retrieves images with similar visual features."
@@ -328,6 +336,7 @@
   authors: [Thomas Delteil]
   tags: [neural-networks, deep-learning, search, mxnet]
   uses: [tutorial, demo, backend-dependent]
+  img: imgs/visual-search.png
 
 - name: bayes.js
   desc: "An implementation of a small MCMC framework and some likelihood functions for doing Bayes stats in the browser."
@@ -382,5 +391,5 @@
   authors: [Naftali Harris]
   tags: [kmeans]
   uses: [tutorial]
-  img: https://idyll.pub/post/dimensionality-reduction-293e465c2a3443e8941b016d/static/images/share.png
+  img: imgs/visualizing-k-means-clustering.png
   date: "2014-01-19"
