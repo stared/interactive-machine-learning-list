@@ -8,7 +8,7 @@ It is a simple no-build Vue.js website:
 
 Feel invited to Pull Request other interactive visualizations (check [websites.yaml](https://github.com/stared/interactive-machine-learning-list/blob/master/websites.yaml))! :)
 
-...aaand if you want to create such visualizations by yourself, see [In Browser AI](http://eepurl.com/dBJCfP).
+...aaand if you want to create such visualizations by yourself, see [In Browser AI](https://inbrowser.ai/).
 
 ## What goes there?
 
