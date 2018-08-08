@@ -393,3 +393,15 @@
   uses: [tutorial]
   img: imgs/visualizing-k-means-clustering.png
   date: "2014-01-19"
+
+- name: "Matrix factorization visualized"
+  desc: "Matrix factorization implemented in pure JavaScript. Also for sparse data and logistic regression."
+  url: https://p.migdal.pl/matrix-decomposition-viz/
+  repo: https://github.com/stared/matrix-decomposition-viz
+  license: MIT
+  writeup: ""
+  authors: [Piotr Migdał]
+  tags: [matrix-factorization]
+  uses: [demo]
+  img: imgs/matrix-decomposition-viz.png
+  date: "2017-10-17"
