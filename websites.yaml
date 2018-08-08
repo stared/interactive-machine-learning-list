@@ -405,3 +405,14 @@
   uses: [demo]
   img: imgs/matrix-decomposition-viz.png
   date: "2017-10-17"
+
+- name: "AI Experiments - Experiments with Google"
+  desc: "AI Experiments is a showcase for simple experiments that make it easier for anyone to start exploring machine learning, through pictures, drawings, language, music, and more."
+  url: https://experiments.withgoogle.com/collection/ai
+  repo: ""
+  license: ""
+  writeup: ""
+  authors: [Google]
+  tags: [matrix-factorization]
+  uses: [collection]
+  img: imgs/experiments-with-google.png
