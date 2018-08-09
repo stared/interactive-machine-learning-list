@@ -416,7 +416,7 @@
   tags: [matrix-factorization]
   uses: [collection]
   img: imgs/experiments-with-google.png
-  
+
 - name: "A New Angle on L2 Regularization"
   desc: "An explorable explanation on the phenomenon of adversarial examples in linear classification and its relation to L2 regularization."
   url: https://thomas-tanay.github.io/post--L2-regularization/
@@ -425,6 +425,18 @@
   writeup: ""
   authors: [Thomas Tanay, Lewis D Griffin]
   tags: [svm, overfitting, adversarial-examples]
-  uses: [tutorial]
+  uses: [tutorial, paper]
   img: "imgs/a-new-angle-on-l2-reg.png"
   date: "2018-06-21"
+
+- name: "Support Vector Machine Explorer"
+  desc: "This is a demo of the Dash interactive Python framework developed by Plotly."
+  url: https://dash-svm.plot.ly/
+  repo: https://github.com/plotly/dash-svm
+  license: MIT
+  writeup: ""
+  authors: [Xing Han Lu]
+  tags: [svm]
+  uses: [demo, backend-dependent, plotly, scikit-learn]
+  img: imgs/dash-svm-plot-ly.png
+  date: "2018-08-09"
