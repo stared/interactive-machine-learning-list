@@ -27,6 +27,7 @@ Strong preference for open-source solutions (so people can reuse it and learn fr
 * [Explorable Explanations](http://explorabl.es/)
 * [Distill](https://distill.pub/)
 * [Explained Visually](http://setosa.io/ev/)
+* [AI Experiments with Google](https://experiments.withgoogle.com/collection/ai)
 
 ## Inspirations
 
