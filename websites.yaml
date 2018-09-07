@@ -440,3 +440,15 @@
   uses: [demo, backend-dependent, plotly, scikit-learn]
   img: imgs/dash-svm-plot-ly.png
   date: "2018-08-09"
+  
+- name: "GAN lab: Play with Generative Adversarial Networks (GANs) in your browser!"
+  desc: "An Interactive, Visual Experimentation Tool for Generative Adversarial Networks."
+  url: https://poloclub.github.io/ganlab/
+  repo: https://github.com/poloclub/ganlab
+  license: Apache
+  writeup: ""
+  authors: [Minsuk Kahng, Nikhil Thorat, Polo Chau, Fernanda Viégas, and Martin Wattenberg]
+  tags: [GAN, deep-learning, tensorflowjs]
+  uses: [demo]
+  img: imgs/GANlab.png
+  date: "2018-09-04"
