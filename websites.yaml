@@ -452,3 +452,14 @@
   uses: [demo]
   img: imgs/ganlab.png
   date: "2018-09-04"
+- name: "Semantic Calculator"
+  desc: "Do math with word embeddings!"
+  url: https://semantic.a9.io/
+  repo: ""
+  license: ""
+  writeup: ""
+  authors: [Max Krieger]
+  tags: [word2vec, pca, glove, word-embeddings]
+  uses: [demo]
+  img: imgs/semantic-calculator.png
+  date: "2018-09-29"
