@@ -459,7 +459,7 @@
   license: ""
   writeup: ""
   authors: [Max Krieger]
-  tags: [word2vec, pca, glove, word-embeddings]
-  uses: [demo]
+  tags: [word2vec, glove, word-embeddings]
+  uses: [demo, backend-dependent]
   img: imgs/semantic-calculator.png
   date: "2018-09-29"
