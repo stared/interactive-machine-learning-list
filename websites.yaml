@@ -463,3 +463,14 @@
   uses: [demo, backend-dependent]
   img: imgs/semantic-calculator.png
   date: "2018-09-29"
+
+- name: "ml5.js"
+  desc: "ml5.js aims to make machine learning approachable for a broad audience of artists, creative coders, and students. The library provides access to machine learning algorithms and models in the browser, building on top of TensorFlow.js with no other external dependencies."
+  url: https://ml5js.org/
+  repo: https://github.com/ml5js/ml5-library
+  license: MIT
+  writeup: https://towardsdatascience.com/introduction-to-ml5-js-3fe51d6a4661
+  authors: [NYU ITP teachers, residents and students]
+  tags: [machine-learning, tensorflowjs]
+  uses: [tutorial, demo, library]
+  img: imgs/ml5.png
