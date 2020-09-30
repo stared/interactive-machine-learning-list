@@ -1,4 +1,5 @@
-# interactive-machine-learning-list
+# interactive-machine-learning-list. you should at least go there.
+this is a good platform to learn something about data science concept like machine learning,deep learning,AI etc.
 
 A collaborative list of interactive Machine Learning, Deep Learning and Statistics websites.
 Started by [Piotr Migdał](https://p.migdal.pl/), but anyone is encouraged to contribute!
