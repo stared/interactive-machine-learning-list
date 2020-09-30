@@ -55,3 +55,5 @@ Main layout and styling developed by [Jakub Fogel](https://github.com/fogelkuba)
 * Some sorting (alphabetical?)
 * Share button
 * Code refactoring :)
+
+I'm a beginner and literally i'm not understanding this as much as i expect , overall it is good , but try to make it beginner friendly
