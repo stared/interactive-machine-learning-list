@@ -1,3 +1,14 @@
+- name: "CNN Explainer"
+  desc: "An interactive visualization system designed to help non-experts learn about Convolutional Neural Networks (CNNs)"
+  url: https://poloclub.github.io/cnn-explainer/
+  repo: https://github.com/poloclub/cnn-explainer
+  license: MIT
+  writeup: https://arxiv.org/abs/2004.15004
+  authors: [Zijie Jay Wang, Robert Turko, Omar Shaikh, Haekyu Park, Nilaksh Das, Fred Hohman, Minsuk Kahng, Duen Horng (Polo) Chau]
+  tags: [cnn, convnet]
+  uses: [demo, tutorial]
+  img: https://i.imgur.com/7FGSR7S.png
+
 - name: "Deep Recurrent Nets character generation demo"
   desc: "This demo shows usage of the recurrentjs library train RNN and LSTM networks in JavaScript."
   url: https://cs.stanford.edu/people/karpathy/recurrentjs/
