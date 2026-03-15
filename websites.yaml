@@ -498,3 +498,14 @@
   uses: [demo]
   img: imgs/drum_space.png
   date: "2019-03-10"
+
+- name: "Visprex"
+  desc: "In-browser data visualisation tool that helps you speed up your statistical modelling and analytics workflows."
+  url: https://visprex.com/
+  repo: https://github.com/visprex/visprex
+  license: MIT
+  writeup: https://kengoa.github.io/software/2024/11/03/small-software.html
+  authors: [Kengo Arao]
+  tags: [data visualization, statistics]
+  uses: [demo]
+  img: https://docs.visprex.com/features/modelling/images/regression.png
