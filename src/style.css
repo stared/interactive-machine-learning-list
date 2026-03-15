@@ -124,6 +124,7 @@ ul > li {
     background-color: hsla(0,0%,0%,0.70);
     background-blend-mode: overlay;
     min-height: 300px;
+    padding-bottom: 75px;
     background-size: cover;
     color: #fff;
     position: relative;

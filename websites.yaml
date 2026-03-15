@@ -95,7 +95,7 @@
   authors: [Daniel Smilkov, Shan Carter]
   tags: [mlp]
   uses: [demo]
-  img: http://playground.tensorflow.org/preview.png
+  img: https://playground.tensorflow.org/preview.png
 
 - name: "A visual introduction to machine learning (Part 1)"
   url: http://www.r2d3.us/visual-intro-to-machine-learning-part-1/
@@ -106,7 +106,7 @@
   authors: [Stephanie Yee, Tony Chu]
   tags: [decision-tree]
   uses: [demo, tutorial]
-  img: http://www.r2d3.us/static/pages/decision-trees-part-1/preview-en.png
+  img: https://www.r2d3.us/static/pages/decision-trees-part-1/preview-en.png
 
 - name: "A visual introduction to machine learning (Part 2)"
   desc: Model Tuning and the Bias-Variance Tradeoff
@@ -117,7 +117,7 @@
   authors: [Stephanie Yee, Tony Chu]
   tags: [decision-tree, overfitting]
   uses: [demo, tutorial]
-  img: http://www.r2d3.us/static/pages/decision-trees-part2-v2/part2-preview-en.png
+  img: https://www.r2d3.us/static/pages/decision-trees-part2-v2/part2-preview-en.png
 
 - name: "D3 Graph Theory"
   desc: "Learn graph theory using interactive visualizations made in D3.js."
@@ -238,6 +238,7 @@
   authors: [Joon-Ku Kang]
   tags: [machine-learning]
   uses: [demo, library, npm]
+  img: ""
 
 - name: "Neural Slime Volleyball"
   desc: "HTML5-JS Slime Volleyball clone created using ConvNetJS."
