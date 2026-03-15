@@ -143,14 +143,14 @@
 
 - name: "Seeing Theory"
   desc: "A visual introduction to probability and statistics"
-  url: http://students.brown.edu/seeing-theory/
+  url: https://seeing-theory.brown.edu/index.html
   repo: https://github.com/seeingtheory/Seeing-Theory
   license: Apache
   writeup: ""
   authors: [Daniel Kunin, Jingru Guo, Tyler Dae Devlin, Daniel Xiang]
   tags: [statistics]
   uses: [tutorial]
-  img: https://students.brown.edu/seeing-theory/img/share/home.png
+  img: https://seeing-theory.brown.edu/img/share/home.png
 
 - name: "tSNE for the Web"
   desc: "TensorFlow.js Powered tSNE Implementation"
