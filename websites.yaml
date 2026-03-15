@@ -143,14 +143,14 @@
 
 - name: "Seeing Theory"
   desc: "A visual introduction to probability and statistics"
-  url: http://students.brown.edu/seeing-theory/
+  url: https://seeing-theory.brown.edu/index.html
   repo: https://github.com/seeingtheory/Seeing-Theory
   license: Apache
   writeup: ""
   authors: [Daniel Kunin, Jingru Guo, Tyler Dae Devlin, Daniel Xiang]
   tags: [statistics]
   uses: [tutorial]
-  img: https://students.brown.edu/seeing-theory/img/share/home.png
+  img: https://seeing-theory.brown.edu/img/share/home.png
 
 - name: "tSNE for the Web"
   desc: "TensorFlow.js Powered tSNE Implementation"
@@ -498,3 +498,14 @@
   uses: [demo]
   img: imgs/drum_space.png
   date: "2019-03-10"
+
+- name: "Visprex"
+  desc: "In-browser data visualisation tool that helps you speed up your statistical modelling and analytics workflows."
+  url: https://visprex.com/
+  repo: https://github.com/visprex/visprex
+  license: MIT
+  writeup: https://kengoa.github.io/software/2024/11/03/small-software.html
+  authors: [Kengo Arao]
+  tags: [data visualization, statistics]
+  uses: [demo]
+  img: https://docs.visprex.com/features/modelling/images/regression.png
