@@ -498,3 +498,15 @@
   uses: [demo]
   img: imgs/drum_space.png
   date: "2019-03-10"
+
+- name: "Neuron Lab"
+  desc: "A hands-on introduction to neural networks for beginners: turn the weights, bias and activation of a single neuron and watch the math update, then build a small network and watch it learn."
+  url: https://aaryanbindage.github.io/Neuron-Lab/
+  repo: https://github.com/aaryanbindage/Neuron-Lab
+  license: MIT
+  writeup: ""
+  authors: [aaryanbindage]
+  tags: [neural-network, perceptron, activation-functions, beginners]
+  uses: [tutorial, demo]
+  img: https://raw.githubusercontent.com/aaryanbindage/Neuron-Lab/main/screenshot.png
+  date: "2026-11-15"
